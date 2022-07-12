@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Источники — Корпус параллельных переводов</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="./src/icons/favicon.ico" />
+<STYLE type=text/css>
+
+
+
+
+
+
+table.delivery {margin-top: 2em; font-size: 90%; width: 100%; border: 0px; border-collapse: collapse;}
+table.delivery thead {font-weight: bold; background-color:#F2F2F2;}
+table.delivery td {
+    padding: 0px; border-bottom: 1px solid #e8e9eb;
+    padding: 2px 5px 2px 5px;
+    margin: 0;
+    vertical-align: top;}
+
+@media screen and (max-width: 800px) {
+  table.delivery thead {
+    display: none;
+  }
+  table.delivery tr {
+    display: block;
+    Xmargin-bottom: 1rem;
+    Xborder-bottom: 2px solid #e8e9eb;
+  }
+  table.delivery td {
+    display: block;
+    text-align: right;
+  }
+  table.delivery td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table.delivery .delivery_th {
+    background-color:#F2F2F2;
+  }
+  table.delivery .delivery_th code {
+	background-color: #008000; color: #EAFFED;
+}
+}
+
+
+
+
+
+.vertext {
+	bottom: 0; font-weight: 400;
+	color:#FF0000; display: inline-block; width:30px;
+	padding: 0; margin: 35px 2px 0px 0px;
+	text-align: center; Xposition:absolute; vertical-align:middle;
+
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	white-space: nowrap;
+}
+s { 
+    Xvertical-align: middle; color:#FF0000 !important;  /* цвет зачеркивающей линии */ 
+} 
+
+
+
+html *, html ::after, html ::before {
+	box-sizing: inherit;
+}
+body, html {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+html *, html a, html li {
+	outline-color: inherit;
+}
+body {
+	font-size: 101%;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	background-color: #ffffff;
+	color: #111 !important;
+	color: var(--theme-text);
+	min-height: 100vh;
+	line-height: 1.3;
+}
+
+
+/* /art-l */
+#als-expressform *, *, .als-share-circle, .share-circle, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+body, html {
+	height: auto;
+	min-height: 100%;
+}
+body {
+	margin: 0;
+	margin-bottom: 8% !important;
+	1font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	overflow-y: scroll;
+}
+body {
+	-webkit-font-feature-settings: "kern" 1, "liga" 0;
+	-moz-font-feature-settings: "kern" 1, "liga" 0;
+	font-feature-settings: "kern" 1, "liga" 0;
+}
+.als-body-wrap {
+	display: flex;
+	height: 100%;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+}
+.typograf-bg, body.typograf-bg .als-body-wrap, body.typograf-bg .als-footer-wrap, body.typograf-page, body.typograf-page .als-body-wrap, body.typograf-page .als-footer-wrap {
+	background: #ebebeb;
+}
+.als-body-wrap, .als-search-v4-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+}
+.als-header-2021-padding {
+	padding-top: 123px;
+}
+.als-content-wrap {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+}
+.als-text-title {
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 43px!important;
+	line-height: 1.3;
+}
+/* @media all and (max-width:1400px) */
+.als-text-title {
+	font-size: 43px;
+}
+.als-tabs {
+	text-align: center;
+	font-size: 18px;
+	margin: 1.9em 10px 2em;
+	position: relative;
+}
+.als-tabs a	{color: #000!important;}
+.als-tabs a:hover {
+    background: rgba(0,0,0,.1);
+    color: #000!important;
+}
+.als-text-container, .als-text-container-size, .announce__text {
+	max-width: 920px;
+	margin: 0 auto;
+}
+.als-text, .als-text-container, .announce__text {
+	font-size: 21px;
+	padding: 0 1em;
+}
+/* @media all and (max-width:1400px) */
+.als-text, .als-text-container, .announce__text {
+	font-size: 19px;
+}
+.als-text .text-margin, .als-text p, .als-text-container .text-margin, .als-text-container p, .text-margin.als-text-container, .text-margin.als-text, .announce__text .text-margin, .announce__text p, .text-margin.announce__text {
+	margin: 1em auto .7em;
+}
+.als-text p, .als-text-container p, .announce__text p {
+	font-family: inherit;
+	font-size: inherit;
+}
+.als-logo-barcode, .blue-store-button, a.download, span.pause span {
+	position: relative;
+	font-weight: bold;
+}
+a:link {
+	color: #0089ff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0, 137, 255, .3);
+	-webkit-transition: color .3s ease, border-color .3s ease;
+	transition: color .3s ease, border-color .3s ease;
+}
+a.download:hover:before {
+    opacity: .6;
+}
+a.download::before {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	left: -17px;
+	top: 6px;
+	background: url(./src/icons/download-icon.svg) no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.4;
+	-webkit-transition: opacity .3s cubic-bezier(.55, .08, .06, .97);
+	transition: opacity .3s cubic-bezier(.55, .08, .06, .97);
+}
+.als-tabs a {
+	font-size: inherit;
+	padding: .5em 1.2em;
+	text-decoration: none;
+	border: none;
+	position: relative;
+	display: inline-block;
+}
+.als-tabs span {
+	font-size: inherit;
+	padding: .0em 0em;
+	text-decoration: none;
+	border: none;
+	position: relative;
+	display: inline-block;
+}
+.als-tabs span a {
+	color: #ffffff !important;
+}
+.als-tabs span a:hover, .als-tabs span a:visited {
+	color: #ffffff !important;
+	background-color: #111BEF !important;
+}
+.als-tabs a {
+	color: #000;
+	background: rgba(0,0,0,.05);
+	cursor: pointer;
+}
+.als-tabs a:not(.selected) {
+	-webkit-transition: background .2s cubic-bezier(.55, .08, .06, .97);
+	transition: background .2s cubic-bezier(.55, .08, .06, .97);
+}
+.als-tabs .als-tabs-bg, .als-tabs a.pseudo-selected, .als-tabs a.selected, .als-tabs a.with-nav, .als-tabs span {
+	color: #fff;
+}
+.als-tabs .als-tabs-bg, .als-tabs a.selected, .als-tabs a.with-nav, .als-tabs span {
+	background: #4149F2;
+}
+.als-tabs ins {
+	outline: 0;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	line-height: 1.3;
+	vertical-align: baseline;
+}
+.als-tabs ins::before {
+	display: none;
+}
+.als-tabs .als-tabs-bg ins, .als-tabs a.pseudo-selected ins, .als-tabs a.selected ins, .als-tabs a.with-nav ins, .als-tabs span ins {
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+.als-tabs .als-tabs-bg ins::before, .als-tabs a.pseudo-selected ins::before, .als-tabs a.selected ins::before, .als-tabs a.with-nav ins::before, .als-tabs span ins::before {
+	left: -0.8em;
+	opacity: 1;
+}
+.als-text .h1, .als-text .subtitle, .als-text h1, .als-text-container .h1, .als-text-container .subtitle, .als-text-container h1, .als-text-title .h1, .als-text-title .subtitle, .als-text-title h1 {
+	font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+}
+.als-text .h1, .als-text h1, .als-text-container .h1, .als-text-container h1, .als-text-title .h1, .als-text-title h1 {
+	font-weight: 400;
+	font-size: inherit;
+	margin-bottom: 0.2em;
+	margin-top: 1.1em;
+}
+/* art-l/ */
+
+
+code, kbd, samp {
+	font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+	font-size: 101%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+}
+code {
+	direction: ltr;
+	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+code {
+	white-space:nowrap !important;
+	padding: .1em .2em;
+	background-color: #EAFFED; color: #008000;
+	border-radius: 3px;
+	font-size: 101%;
+	font-smooth: auto;
+	word-wrap: break-word;
+}
+.table th:not([scope=row]) {
+	border-top: 0;
+	border-bottom: 1px;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+a:link {
+	color: #0000FF;
+	border-color: #b2ccf0;
+}
+a:visited {
+        color: #0000FF;
+}
+a:visited {
+	border-color: #CC3399;
+}
+
+a:visited.fresh, a:visited.footer {
+	border-color: #CC3399;
+}
+a:hover {
+	border-color: #f0b2b2; color: #F41224;
+}
+a:active  { color:#8B0000; }
+
+.output { margin: 2% 0 0 0; }
+
+
+
+h1 {text-align:center; margin-top: 2em; margin-bottom: 1em;}
+h2 {text-align:center; margin-top: 1.7em; margin-bottom: 1em;}
+
+
+.tbl p { margin: 0pt;  }
+
+P	{ text-indent: 0em; Xmargin: 0.2em; }
+P.tab	{ text-align: left; font-size: 88%; margin-left: 0.3em; text-indent: 0em; }
+P.tabv	{ text-align: left; font-size: 88%; margin-left: 1.2em; text-indent: -1.3em; padding:5px 0px 5px 0px; }
+
+
+.font { font-size:121%; padding:0px 1px 0px 2px;}
+p.tabli {text-indent: 0em;}
+
+
+irsns   { background-color:#009878; color:#ffffff;}
+dud15 { background-color:#c2af9a; color:#8e3635;}
+irt16 { background-color:#96391d; color:#D0B64E;}
+kodkt { background-color:#55a72a; color:#e3f4e5;}
+kod21 { background-color:#1f3c8e; color:#B7AD98;}
+raz01 { background-color:#E91344; color:#ffffff;}
+dud15, kod21, irt16, irsns, kodkt, raz01, its33, uzh27 { font-size:12px !important; text-align:center !important; white-space:nowrap; overflow: visible; padding:3px 4px 3px 4px; font-variant:small-caps !important;}
+
+k {font-size:11px !important;}
+
+
+img {padding:0px;}
+
+
+
+
+@font-face {
+  font-family: DXIcons;
+  src: local("DevExtreme Generic Icons"),local("devextreme_generic_icons"),url("./src/icons/dxicons.woff2") format("woff2"),url("./src/icons/dxicons.woff") format("woff"),url("./src/icons/dxicons.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.dx-show-clear-button .dx-icon-clear {
+    color: #F41224;
+    top: 50%;
+    margin-top: -17px;
+    padding: 0px;
+    width: 34px;
+    height: 34px;
+    background-position: 8px 8px;
+    background-size: 18px 18px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.dx-icon-clear {
+    color: #F41224;
+    font: 14px/1 DXIcons;
+}
+.dx-icon-overflow::before {
+    font-weight: bold;
+    content: "";
+}
+.dx-button .dx-icon {
+    width: 16px; 
+    height: 16px; 
+    background-position: 0 0; 
+    background-size: 16px 16px; 
+    padding: 0; 
+    font-size: 14px; 
+    text-align: center; 
+    line-height: 12px; 
+    margin-right: 0; 
+    margin-left: 0; 
+}
+.dx-button {
+    padding: 2px 6px 2px 6px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+}
+.dx-button .dx-icon {
+    -webkit-user-drag: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dx-widget, .dx-widget *, .dx-widget ::after, .dx-widget ::before, .dx-widget::after, .dx-widget::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dx-icon-overflow {
+    font: 14px/1 DXIcons;
+}
+.dx-icon {
+    background-position: 50% 50%;
+    Xdisplay: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.dx-icon-clear::before {
+    content: "";
+}
+::selection {
+    background: #000000;
+    color: #ffffff;
+}
+/*-----------------*/
+.dx-header-filter-empty {
+    color: #888888;
+    top: 50%;
+    margin-top: -17px;
+    padding: 0px;
+    width: 34px;
+    height: 34px;
+    background-position: 8px 8px;
+    background-size: 18px 18px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.dx-header-filter-empty {
+    font: 14px/1 DXIcons;
+}
+.dx-header-filter {
+    background-position: 50% 50%;
+    Xdisplay: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.dx-header-filter-empty::before {
+    content: "";
+}
+
+
+li {
+  Xmargin: 5px 0; margin: 0px 0px 2px 8px; text-indent: 0px;
+  Xlist-style-type: "\2014\0020"; /*none circle square disc*/ 
+  /*background: url('li.gif') no-repeat 0 0.6em;*/
+}
+
+sup a{border-style: none !important;}
+sup{margin-left:2px; font-weight:normal; border-style: none !important;}
+sup{font-size:8pt;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em;}
+
+.sup2{font-size:100%;}
+.sup2{top:-0.2em}
+
+.svg_pic:active path {
+fill: #BB1414;
+}
+
+
+
+
+.thumbnails
+{
+/* Компенсируем отступы между float-блоками, чтобы они занимали все доступное пространство */
+margin: -3em 0 0 -2em;
+
+/* Выравнивание по центру */
+text-align: center;
+}
+
+.thumbnail
+{
+/* Убираем подчеркивание у элемента ins,
+который был использован для совместимости со старыми версиями Internet Explorer */
+text-decoration: none;
+
+/* Следующее правило для Firefox 2 */
+display: -moz-inline-box;
+
+/* а это для остальных */
+display: inline-block;
+
+vertical-align: top;
+
+/* Убираем выравнивание по центру */
+text-align: left;
+
+/* Отступы между блоками */
+margin: 0em 0 0 2em;
+}
+
+.thumbnail .r
+{
+/* Если есть необходимость, то свойства padding, border, background и position со значением relative
+лучше задавать у этого элемента -- это несколько расширит количество поддерживаемых версий браузеров */
+
+/* Задаем минимальную ширину по тексту */
+width: 14em;
+
+/* Минимальная ширина в пикселях будет автоматически рассчитываться по ширине картинки */
+float: left;
+}
+
+
+
+c1 { background-color:#7A00E5; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c2 { background-color:#0068FF; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c3 { background-color:#00BC3F; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c4 { background-color:#FFFF00; padding:12px 0px 12px 0px; color:#FF0000;}
+c5 { background-color:#FF7F00; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c6 { background-color:#FF0000; padding:12px 0px 12px 0px; color:#FFFFFF;}
+
+
+
+
+
+.r ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px 0px 0px -25px; color:#444444;
+}
+
+.r li { 
+  padding-left: 16px; 
+}
+
+.r li::before {
+  content: "•";
+  padding-right: 6px;
+  color: #000000;
+}
+
+blockquote {
+  font-size:90%;
+}
+
+</style>
+
+
+
+</head>
+<body>
+<div class="als-body-wrap">
+
+
+
+
+
+
+
+
+
+
+<div class="als-content-wrap" data-als-search="wrapper"><div class="als-text-title"><h1 style="margin-top: 0.4em; margin-bottom: 0.6em;">КОРПУС <br>ПАРАЛЛЕЛЬНЫХ <br><nobr>ПЕРЕВОДОВ<sup class="sup2"><a href="https://ghalghay.github.io/" target="_blank">*</a></sup></nobr></h1></div>
+
+
+
+<div class="als-text-container">
+
+
+
+<h2>ОСОБЕННОСТИ ПРЕДСТАВЛЕНИЯ</h2>
+
+<p>Деление на строки для «вытянутой» в строку стихотворной речи отмечается вертикальной чертой:&nbsp;«<font color='#32CD32'>|</font>». Строфы и абзацы отграничиваются друг от друга двумя вертикальными чертами:&nbsp;«<font color='#32CD32'>||</font>».</p>
+
+
+
+
+
+<h2>ИСТОЧНИКИ</h2>
+
+
+<table border="1" bordercolor="#000000">
+<tr>
+<td>
+<ul>
+<li>Тургенев И. С. Муму  на ингуш. яз / Шолж-ГIала: НохчгIалгIпачхьалкхиздат, 1939.&nbsp;— 46&nbsp;с.</li>
+</ul>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<ul>
+<li>Игора бIунах дола дош (Слово о&nbsp;полку Игореве) / Пер. С.&nbsp;Чахкиева // Сердало.&nbsp;— 2004.&nbsp;— №&nbsp;139, №&nbsp;140</li>
+<blockquote>
+<p>Текст «Слова…» разбит на&nbsp;фрагменты в&nbsp;соответствии с&nbsp;делением, предложенным Р.&nbsp;О.&nbsp;Якобсоном.</p>
+<p>Перевод на современный русский язык: Д.&nbsp;С.&nbsp;Лихачёва // «Изборник» (Сборник произведений литратуры Древней Руси). М.:&nbsp;Художественная литература,&nbsp;1969</p>
+
+<h3>Кхеталуш доаца дешаш</h3>
+
+<div id="1"></div><p><sup>1</sup> <b>БОЯН</b> — илланч, ашархо, эрсий меттала аьлча</b> — ашуг. КӀоаргга хьаькъал дола, хӀамах сакхувш вола саг. Ваьхав ХӀ-ХӀӀ бӀаьшерашка.</p>
+<div id="2"></div><p><sup>2</sup> <b>КАСОГИ (касожски бӀунаш)</b> — гӀаьбартой, гӀаьбартой бӀунаш.</p>
+<div id="3"></div><p><sup>3</sup> <b>РЕДЕДА</b> — гӀаьбартой аьла, бӀунбаьчча.</p>
+<div id="4"></div><p><sup>4</sup> <b>ВЕЛЕС (ВОЛОС)</b> — моцагӀа баьха славянаш дуккха даьлаш болаш хиннаб. Ӏаьса хиннаб уж. Велес (Волос) хиннав Ӏун а поэзе а даьла лоархӀаш.</p>
+<div id="5"></div><p><sup>5</sup> <b>СУЛА</b> — Днепрах хьакхеташ дола дода хий.</p>
+<div id="6"></div><p><sup>6</sup> <b>ДИВ</b> — е оалхазар да е садоалла хӀама я, бокъонца из фуй ховш бац Ӏилманхой. Цхьабараша из бов я, йоах, шоллагӀбараша тушол котам я, йоах, кхоалагӀбараша хьаргӀа я, йоах. Болаш ба див славяний мифически даьла хиннав яхараш а.</p>
+<div id="7"></div><p><sup>7</sup> <b>ВОЛГА</b> — Эдал.</p>
+<div id="8"></div><p><sup>8</sup> <b>ПОМОРИЕ</b> — Азовски форда бердаш тӀа даьда лаьтташ.</p>
+<div id="9"></div><p><sup>9</sup> <b>ПОСУЛИЕ</b> — Сула яхача хин бердаш тӀа даьда лаьтташ.</p>
+<div id="10"></div><p><sup>10</sup> <b>СУРОЖ</b> — хӀанз Судак яха гӀала.</p>
+<div id="11"></div><p><sup>11</sup> <b>ТМУТОРОКАНЬ (ТМУТАРАКАНЬ)</b> — эрсий княжество, Тамански ахгӀайре тӀа улла Черниговски аьлий доалахье. Повеста тӀа гӀала а оал цох.</p>
+<div id="12"></div><p><sup>12</sup> <b>ГЗАК</b> — половецки ханаш.</p>
+<div id="13"></div><p><sup>13</sup> <b>КОНЧАК // КАЯЛА</b> — дода хий.</p>
+<div id="14"></div><p><sup>14</sup> <b>СТРИБОГ</b> — славяний миха даьла.</p>
+<div id="15"></div><p><sup>15</sup> <b>АВАРСКИ (АВАРЫ)</b> — обры. Баьхаб V бӀаьшере Ӏаьржача форда къилбаседехьа даьдача лаьтташ тӀа.</p>
+<div id="16"></div><p><sup>16</sup> <b>ТРОЯН</b> — моцагӀа дуккха даьлаш а болаш бӀаьхача эрсий даьла хила везаш ва.</p>
+<div id="17"></div><p><sup>17</sup> <b>КАНИНА</b> — дода хий.</p>
+<div id="18"></div><p><sup>18</sup> <b>ДАЖДЬБОЖА (ДАЖЬБОГ)</b> — моцагӀа-моцагӀа эрсий къама хиннача даьлех цаӀ ва. Даждьбога тӀехье — эрсий халкъа тӀехье яхалга да.</p>
+<div id="19"></div><p><sup>19</sup> <b>КАРНА</b> — Ӏазап, гӀайгӀа.</p>
+<div id="20"></div><p><sup>20</sup> <b>ЖЕЛЕ (ЖЛЯ)</b> — белхам, гӀайгӀа, сагото.</p>
+<div id="21"></div><p><sup>21</sup> <b>КОБЯК</b> — половецки хан.</p>
+<div id="22"></div><p><sup>22</sup> <b>ПЛЕСЕНЬСК</b> — Киева юххе улла моттиг.</p>
+<div id="23"></div><p><sup>23</sup> <b>КИЯНЬ</b> — Киева юххе гӀолла дода хий.</p>
+<div id="24"></div><p><sup>24</sup> <b>ХИНОВИ</b> — малхбоалехьа ухкача мехкашкара халкъаш, Русьсаца моастагӀал леладеш хиннад цар.</p>
+<div id="25"></div><p><sup>25</sup> <b>ГОТЫ</b> — готаш баьхаб Крыме а Тмуторокана юххе а. Уж а гӀадбаха ба, половцаш котбаьнна.</p>
+<div id="26"></div><p><sup>26</sup> <b>БУС</b> — из хила везаш ва антски аьла Бос, Боус е Боаз.</p>
+<div id="27"></div><p><sup>27</sup> <b>АНТЫ</b> — анташ</b> — моцагӀа баьхача славяний эрсий даьй.</p>
+<div id="28"></div><p><sup>28</sup> <b>ШАРУКАН</b> — хана Кончака даьда.</p>
+<div id="29"></div><p><sup>29</sup> <b>ТАТРАНЫ // ШЕЛЬБИРЫ // ТОПЧАКИ // РЕВУГИ // ОЛЬБЕРЫ</b> — цхьаннахьа а хайна ца дахаш, аренашка гӀолла кхесташ лела тюркски халкъех дола кьамаш.</p>
+<div id="30"></div><p><sup>30</sup> <b>РИМОВ</b> — Переяславски княжества юххе улла гӀала.</p>
+<div id="31"></div><p><sup>31</sup> <b>ОСМОМЫСЛ</b> — Галицкий Ярослав; кӀоаргга хьаькъал долаш саг из хиларах тилла хиннай цох из цӀи. (Осмомысл — бархӀуйлаяр).</p>
+<div id="32"></div><p><sup>32</sup> <b>ЯТВЯГИ</b> — Литве даьхача къамех цхьа къам.</p>
+<div id="33"></div><p><sup>33</sup> <b>ДЕРЕМЕЛА</b> — ятвяжски область е ятвяжски къам.</p>
+<div id="34"></div><p><sup>34</sup> <b>РОСЬ</b> — Днепрах хьакхеташ дола дода хий.</p>
+<div id="35"></div><p><sup>35</sup> <b>ДУДУТОК (ДУДУТКИ)</b> — Новгорода юххера нах баха цхьа моттиг хила тарлу.</p>
+<div id="36"></div><p><sup>36</sup> <b>НЕМИГА</b> — доккха доаца дода хий; Минск яха гӀала лаьттай цу тӀа. ХӀанз из хий доацаш да.</p>
+<div id="37"></div><p><sup>37</sup> <b>ХОРС</b> — моцагӀа баьхача славяний малха даьла.</p>
+<div id="38"></div><p><sup>38</sup> <b>ОВЛУР // ӀОВЛАР</b> — ЦӀихезза волча Ӏилманхочо Мальсагов Дошлакъас ший башха-дикача «Игора бӀунах долча деша» тӀара кхеталуш йоаца цхьацца моттигаш» яхача тохкама балха тӀа яздаьд, повеста тӀа вувцаш вола аьла Игорь есараллара мукъаваьккха турпал Овлур гӀалгӀа хиннав, яхаш. Цун цӀи Ӏовлар хиннай. ДӀадахача бӀаьшера кховзткъалагӀча шерашка язбаьб Д. Мальсагова ший болх, цхьабакъда, хӀанзалца хьа, из иштта дац, из кхыча тайпара да, аьннадац цхьанна Ӏилманхочо.</p>
+<div id="39"></div><p><sup>39</sup> <b>СТУГНА</b> — доккха доаца дода хий.</p>
+<div id="40"></div><p><sup>40</sup> <b>ХОДЫНА</b> — Боян санна илланч, ашархо, ашуг.</p>
+<div id="41"></div><p><sup>41</sup> <b>БОРИЧЕВ</b> — урхе.</p>
+
+
+</blockquote>
+</ul>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

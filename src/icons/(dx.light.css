@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: 'DXIcons';
+src: local("DevExtreme Generic Icons"),local("devextreme_generic_icons"),url(https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/css/icons/dxicons.woff2) format('woff2'),url(https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/css/icons/dxicons.woff2) format('woff'),url(https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/css/icons/dxicons.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

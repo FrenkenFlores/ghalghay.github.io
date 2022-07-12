@@ -1,0 +1,1181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>О проекте — Словарный свод ингушского языка</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="./src/icons/favicon.ico" />
+<STYLE type=text/css>
+
+
+
+
+
+
+table.delivery {margin-top: 2em; font-size: 90%; width: 100%; border: 0px; border-collapse: collapse;}
+table.delivery thead {font-weight: bold; background-color:#F2F2F2;}
+table.delivery td {
+    padding: 0px; border-bottom: 1px solid #e8e9eb;
+    padding: 2px 5px 2px 5px;
+    margin: 0;
+    vertical-align: top;}
+
+@media screen and (max-width: 800px) {
+  table.delivery thead {
+    display: none;
+  }
+  table.delivery tr {
+    display: block;
+    Xmargin-bottom: 1rem;
+    Xborder-bottom: 2px solid #e8e9eb;
+  }
+  table.delivery td {
+    display: block;
+    text-align: right;
+  }
+  table.delivery td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table.delivery .delivery_th {
+    background-color:#F2F2F2;
+  }
+  table.delivery .delivery_th code {
+	background-color: #008000; color: #EAFFED;
+}
+}
+
+
+
+
+
+.vertext {
+	bottom: 0; font-weight: 400;
+	color:#FF0000; display: inline-block; width:30px;
+	padding: 0; margin: 35px 2px 0px 0px;
+	text-align: center; Xposition:absolute; vertical-align:middle;
+
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	white-space: nowrap;
+}
+s { 
+    Xvertical-align: middle; color:#FF0000 !important;  /* цвет зачеркивающей линии */ 
+} 
+
+
+
+html *, html ::after, html ::before {
+	box-sizing: inherit;
+}
+body, html {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+html *, html a, html li {
+	outline-color: inherit;
+}
+body {
+	font-size: 101%;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	background-color: #ffffff;
+	color: #111 !important;
+	color: var(--theme-text);
+	min-height: 100vh;
+	line-height: 1.3;
+}
+
+
+/* /art-l */
+#als-expressform *, *, .als-share-circle, .share-circle, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+body, html {
+	height: auto;
+	min-height: 100%;
+}
+body {
+	margin: 0;
+	margin-bottom: 8% !important;
+	1font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	overflow-y: scroll;
+}
+body {
+	-webkit-font-feature-settings: "kern" 1, "liga" 0;
+	-moz-font-feature-settings: "kern" 1, "liga" 0;
+	font-feature-settings: "kern" 1, "liga" 0;
+}
+.als-body-wrap {
+	display: flex;
+	height: 100%;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+}
+.typograf-bg, body.typograf-bg .als-body-wrap, body.typograf-bg .als-footer-wrap, body.typograf-page, body.typograf-page .als-body-wrap, body.typograf-page .als-footer-wrap {
+	background: #ebebeb;
+}
+.als-body-wrap, .als-search-v4-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+}
+.als-header-2021-padding {
+	padding-top: 123px;
+}
+.als-content-wrap {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+}
+.als-text-title {
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 43px!important;
+	line-height: 1.3;
+}
+/* @media all and (max-width:1400px) */
+.als-text-title {
+	font-size: 43px;
+}
+.als-tabs {
+	text-align: center;
+	font-size: 18px;
+	margin: 1.9em 10px 2em;
+	position: relative;
+}
+.als-tabs a	{color: #000!important;}
+.als-tabs a:hover {
+    background: rgba(0,0,0,.1);
+    color: #000!important;
+}
+.als-text-container, .als-text-container-size, .announce__text {
+	max-width: 920px;
+	margin: 0 auto;
+}
+.als-text, .als-text-container, .announce__text {
+	font-size: 21px;
+	padding: 0 1em;
+}
+/* @media all and (max-width:1400px) */
+.als-text, .als-text-container, .announce__text {
+	font-size: 19px;
+}
+.als-text .text-margin, .als-text p, .als-text-container .text-margin, .als-text-container p, .text-margin.als-text-container, .text-margin.als-text, .announce__text .text-margin, .announce__text p, .text-margin.announce__text {
+	margin: 1em auto .7em;
+}
+.als-text p, .als-text-container p, .announce__text p {
+	font-family: inherit;
+	font-size: inherit;
+}
+.als-logo-barcode, .blue-store-button, a.download, span.pause span {
+	position: relative;
+	font-weight: bold;
+}
+a:link {
+	color: #0089ff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0, 137, 255, .3);
+	-webkit-transition: color .3s ease, border-color .3s ease;
+	transition: color .3s ease, border-color .3s ease;
+}
+a.download:hover:before {
+    opacity: .6;
+}
+a.download::before {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	left: -17px;
+	top: 6px;
+	background: url(./src/icons/download-icon.svg) no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.4;
+	-webkit-transition: opacity .3s cubic-bezier(.55, .08, .06, .97);
+	transition: opacity .3s cubic-bezier(.55, .08, .06, .97);
+}
+.als-tabs a {
+	font-size: inherit;
+	padding: .5em 1.2em;
+	text-decoration: none;
+	border: none;
+	position: relative;
+	display: inline-block;
+}
+.als-tabs span {
+	font-size: inherit;
+	padding: .0em 0em;
+	text-decoration: none;
+	border: none;
+	position: relative;
+	display: inline-block;
+}
+.als-tabs span a {
+	color: #ffffff !important;
+}
+.als-tabs span a:hover, .als-tabs span a:visited {
+	color: #ffffff !important;
+	background-color: #111BEF !important;
+}
+.als-tabs a {
+	color: #000;
+	background: rgba(0,0,0,.05);
+	cursor: pointer;
+}
+.als-tabs a:not(.selected) {
+	-webkit-transition: background .2s cubic-bezier(.55, .08, .06, .97);
+	transition: background .2s cubic-bezier(.55, .08, .06, .97);
+}
+.als-tabs .als-tabs-bg, .als-tabs a.pseudo-selected, .als-tabs a.selected, .als-tabs a.with-nav, .als-tabs span {
+	color: #fff;
+}
+.als-tabs .als-tabs-bg, .als-tabs a.selected, .als-tabs a.with-nav, .als-tabs span {
+	background: #4149F2;
+}
+.als-tabs ins {
+	outline: 0;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	line-height: 1.3;
+	vertical-align: baseline;
+}
+.als-tabs ins::before {
+	display: none;
+}
+.als-tabs .als-tabs-bg ins, .als-tabs a.pseudo-selected ins, .als-tabs a.selected ins, .als-tabs a.with-nav ins, .als-tabs span ins {
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+.als-tabs .als-tabs-bg ins::before, .als-tabs a.pseudo-selected ins::before, .als-tabs a.selected ins::before, .als-tabs a.with-nav ins::before, .als-tabs span ins::before {
+	left: -0.8em;
+	opacity: 1;
+}
+.als-text .h1, .als-text .subtitle, .als-text h1, .als-text-container .h1, .als-text-container .subtitle, .als-text-container h1, .als-text-title .h1, .als-text-title .subtitle, .als-text-title h1 {
+	font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+}
+.als-text .h1, .als-text h1, .als-text-container .h1, .als-text-container h1, .als-text-title .h1, .als-text-title h1 {
+	font-weight: 400;
+	font-size: inherit;
+	margin-bottom: 0.2em;
+	margin-top: 1.1em;
+}
+/* art-l/ */
+
+
+code, kbd, samp {
+	font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+	font-size: 101%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+}
+code {
+	direction: ltr;
+	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+code {
+	white-space:nowrap !important;
+	padding: .1em .2em;
+	background-color: #EAFFED; color: #008000;
+	border-radius: 3px;
+	font-size: 101%;
+	font-smooth: auto;
+	word-wrap: break-word;
+}
+.table th:not([scope=row]) {
+	border-top: 0;
+	border-bottom: 1px;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+a:link {
+	color: #0000FF;
+	border-color: #b2ccf0;
+}
+a:visited {
+        color: #0000FF;
+}
+a:visited {
+	border-color: #CC3399;
+}
+
+a:visited.fresh, a:visited.footer {
+	border-color: #CC3399;
+}
+a:hover {
+	border-color: #f0b2b2; color: #F41224;
+}
+a:active  { color:#8B0000; }
+
+.output { margin: 2% 0 0 0; }
+
+
+
+h1 {text-align:center; margin-top: 2em; margin-bottom: 1em;}
+h2 {text-align:center; margin-top: 1.7em; margin-bottom: 1em;}
+
+
+.tbl p { margin: 0pt;  }
+
+P	{ text-indent: 0em; Xmargin: 0.2em; }
+P.tab	{ text-align: left; font-size: 88%; margin-left: 0.3em; text-indent: 0em; }
+P.tabv	{ text-align: left; font-size: 88%; margin-left: 1.2em; text-indent: -1.3em; padding:5px 0px 5px 0px; }
+
+
+.font { font-size:121%; padding:0px 1px 0px 2px;}
+p.tabli {text-indent: 0em;}
+
+
+irsns   { background-color:#009878; color:#ffffff;}
+dud15 { background-color:#c2af9a; color:#8e3635;}
+irt16 { background-color:#96391d; color:#D0B64E;}
+kodkt { background-color:#55a72a; color:#e3f4e5;}
+kod21 { background-color:#1f3c8e; color:#B7AD98;}
+raz01 { background-color:#E91344; color:#ffffff;}
+dud15, kod21, irt16, irsns, kodkt, raz01, its33, uzh27 { font-size:12px !important; text-align:center !important; white-space:nowrap; overflow: visible; padding:3px 4px 3px 4px; font-variant:small-caps !important;}
+
+k {font-size:11px !important;}
+
+
+img {padding:0px;}
+
+
+
+
+@font-face {
+  font-family: DXIcons;
+  src: local("DevExtreme Generic Icons"),local("devextreme_generic_icons"),url("./src/icons/dxicons.woff2") format("woff2"),url("./src/icons/dxicons.woff") format("woff"),url("./src/icons/dxicons.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.dx-show-clear-button .dx-icon-clear {
+    color: #F41224;
+    top: 50%;
+    margin-top: -17px;
+    padding: 0px;
+    width: 34px;
+    height: 34px;
+    background-position: 8px 8px;
+    background-size: 18px 18px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.dx-icon-clear {
+    color: #F41224;
+    font: 14px/1 DXIcons;
+}
+.dx-icon-overflow::before {
+    font-weight: bold;
+    content: "";
+}
+.dx-button .dx-icon {
+    width: 16px; 
+    height: 16px; 
+    background-position: 0 0; 
+    background-size: 16px 16px; 
+    padding: 0; 
+    font-size: 14px; 
+    text-align: center; 
+    line-height: 12px; 
+    margin-right: 0; 
+    margin-left: 0; 
+}
+.dx-button {
+    padding: 2px 6px 2px 6px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+}
+.dx-button .dx-icon {
+    -webkit-user-drag: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dx-widget, .dx-widget *, .dx-widget ::after, .dx-widget ::before, .dx-widget::after, .dx-widget::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dx-icon-overflow {
+    font: 14px/1 DXIcons;
+}
+.dx-icon {
+    background-position: 50% 50%;
+    Xdisplay: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.dx-icon-clear::before {
+    content: "";
+}
+::selection {
+    background: #000000;
+    color: #ffffff;
+}
+/*-----------------*/
+.dx-header-filter-empty {
+    color: #888888;
+    top: 50%;
+    margin-top: -17px;
+    padding: 0px;
+    width: 34px;
+    height: 34px;
+    background-position: 8px 8px;
+    background-size: 18px 18px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.dx-header-filter-empty {
+    font: 14px/1 DXIcons;
+}
+.dx-header-filter {
+    background-position: 50% 50%;
+    Xdisplay: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.dx-header-filter-empty::before {
+    content: "";
+}
+
+
+li {
+  Xmargin: 5px 0; margin: 0px 0px 2px 8px; text-indent: 0px;
+  Xlist-style-type: "\2014\0020"; /*none circle square disc*/ 
+  /*background: url('li.gif') no-repeat 0 0.6em;*/
+}
+
+sup a{border-style: none !important;}
+sup{margin-left:2px; font-weight:normal; border-style: none !important;}
+sup{font-size:100%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.2em}
+sub{bottom:-0.25em;}
+
+
+.svg_pic:active path {
+fill: #BB1414;
+}
+
+
+
+
+.thumbnails
+{
+/* Компенсируем отступы между float-блоками, чтобы они занимали все доступное пространство */
+margin: -3em 0 0 -2em;
+
+/* Выравнивание по центру */
+text-align: center;
+}
+
+.thumbnail
+{
+/* Убираем подчеркивание у элемента ins,
+который был использован для совместимости со старыми версиями Internet Explorer */
+text-decoration: none;
+
+/* Следующее правило для Firefox 2 */
+display: -moz-inline-box;
+
+/* а это для остальных */
+display: inline-block;
+
+vertical-align: top;
+
+/* Убираем выравнивание по центру */
+text-align: left;
+
+/* Отступы между блоками */
+margin: 0em 0 0 2em;
+}
+
+.thumbnail .r
+{
+/* Если есть необходимость, то свойства padding, border, background и position со значением relative
+лучше задавать у этого элемента -- это несколько расширит количество поддерживаемых версий браузеров */
+
+/* Задаем минимальную ширину по тексту */
+width: 14em;
+
+/* Минимальная ширина в пикселях будет автоматически рассчитываться по ширине картинки */
+float: left;
+}
+
+
+
+c1 { background-color:#7A00E5; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c2 { background-color:#0068FF; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c3 { background-color:#00BC3F; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c4 { background-color:#FFFF00; padding:12px 0px 12px 0px; color:#FF0000;}
+c5 { background-color:#FF7F00; padding:12px 0px 12px 0px; color:#FFFFFF;}
+c6 { background-color:#FF0000; padding:12px 0px 12px 0px; color:#FFFFFF;}
+
+
+
+
+
+.r ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px 0px 0px -25px; color:#444444;
+}
+
+.r li { 
+  padding-left: 16px; 
+}
+
+.r li::before {
+  content: "•";
+  padding-right: 6px;
+  color: #000000;
+}
+</style>
+
+
+
+<script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(87950919, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/87950919" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+<body>
+<div class="als-body-wrap">
+
+
+
+
+
+<script type="text/javascript">
+  VK.init({
+    apiId: 7910629,
+    onlyWidgets: true
+  });
+</script>
+
+
+
+
+
+
+<center>
+<div style="margin-top:0.7em;"></div>
+
+<span class="svg_pic pic_big" href="/" title="Bejne">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="212.000000pt" height="129.000000pt" viewBox="0 0 212.000000 129.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,129.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="#FFFFFF" stroke-width="6">
+<path d="M1134 1261 c-45 -21 -85 -67 -103 -120 -6 -19 -11 -98 -11 -180 0
+-80 -4 -151 -8 -157 -8 -14 -159 -63 -216 -70 -57 -8 -96 22 -96 75 0 50 26
+73 90 79 27 2 50 8 50 13 0 19 -60 49 -100 49 -90 0 -157 -83 -148 -181 5 -53
+26 -90 70 -122 36 -27 131 -26 231 1 129 36 117 57 117 -199 l0 -221 -45 4
+-46 3 7 -42 6 -43 -151 0 c-175 0 -210 11 -261 81 -36 50 -46 96 -30 143 14
+44 44 66 86 66 37 0 74 -38 74 -76 0 -29 15 -31 30 -5 17 32 12 100 -10 131
+-38 54 -130 76 -188 46 -97 -50 -126 -167 -77 -304 14 -38 25 -73 25 -77 0 -3
+-57 -5 -126 -3 -124 3 -126 3 -150 31 -32 37 -31 81 2 114 21 21 32 25 65 20
+l38 -5 -14 27 c-26 51 -90 64 -154 31 -88 -44 -99 -195 -20 -284 60 -69 28
+-67 990 -64 790 3 868 5 916 21 141 48 178 234 65 329 -62 52 -134 42 -168
+-24 -15 -29 -15 -31 2 -22 90 40 174 -59 111 -132 -20 -22 -34 -27 -102 -35
+-107 -11 -195 -11 -195 0 0 5 11 28 24 52 47 84 51 220 7 279 -67 92 -205 90
+-261 -2 -22 -36 -27 -107 -10 -139 16 -29 30 -23 30 15 0 78 82 115 135 61 20
+-20 25 -34 25 -77 -1 -61 -10 -82 -63 -138 -50 -52 -88 -61 -244 -58 l-128 3
+3 48 c4 46 3 48 -16 38 -12 -6 -30 -11 -41 -11 -21 0 -21 4 -21 216 0 200 2
+219 20 249 24 39 68 62 146 76 51 9 60 8 83 -9 37 -27 40 -80 7 -111 -14 -13
+-37 -23 -51 -23 -20 0 -24 -3 -15 -12 6 -6 30 -11 53 -11 153 0 170 214 22
+270 -53 21 -99 16 -187 -20 -33 -14 -64 -22 -69 -19 -15 9 -11 231 5 269 24
+57 86 74 123 33 27 -30 32 -47 22 -80 -10 -35 4 -36 36 -3 50 49 25 164 -44
+199 -50 26 -102 29 -147 7z"/>
+</g>
+</svg>
+</span>
+</center>
+
+
+
+
+
+
+<div class="als-content-wrap" data-als-search="wrapper"><div class="als-text-title"><h1 style="margin-top: 0.4em; margin-bottom: 0.6em;">СЛОВАРНЫЙ <br>СВОД ИНГУШСКОГО <nobr>ЯЗЫКА<sup><a href="https://ghalghay.github.io/" target="_blank">*</a></sup></nobr></h1></div>
+
+
+<!-- <p style="text-align:center; margin:0em;"><a href="https://ghalghay.github.io/" target="_blank">ГӀалгӀай дешай гуллам</a></p> -->
+
+
+<div class="als-tabs"><a href="#1"><ins>Состав</ins></a><a href="#2"><ins>Сокращения</ins></a><a href="#4"><ins>Поиск</ins></a><a href="#5"><ins>План</ins></a><span><a href="#6"><ins>Скачать</ins></a></span></div>
+
+
+<h1>О ПРОЕКТЕ</h1>
+
+<div class="als-text-container">
+
+<p>Данный проект имеет целью составление единого корпуса словарей ингушского языка, на основе вычитанных текстов, с возможностями поиска и фильтрации, что может пригодиться для различных исследований и стать базой для компьютерных программ, работающих с ингушской морфологией.</p>
+
+<div id="1"></div><h2>СОСТАВ</h2>
+
+<p>Материалы добавляемых изданий отображаются в режиме таблицы, разделенной на 5 колонок/столбцов.</p>
+
+<p>В первом столбце таблицы, для идентификации источника, каждое слово сопровождается библиографической сигнатурой в виде краткого принятого здесь условного обозначения (кода), цвет фона которого маркируется цветом обложки книжного издания. Ниже приведён библиографический список сокращенных названий добавленных в базу словарей, где цифры в составе кода обозначают нумерацию или год издания, буквы&nbsp;— автора или название:</p>
+
+
+<TABLE width=100% cellspacing=0 cellpadding=0 class="tbl" style="font-size:15px !important; padding:3px; margin:2em 0 1.4em 0;"><th rowspan="3" bgcolor="#fff"></th>
+
+<TR style="text-align:center; font-size:11px !important; border: 1px solid #ffffff; height:28px; color:#FF0000;" bgcolor="#DDFB00"><TD width=40>КОД</TD>
+<TD width=60 style="border: 1px solid #ffffff;">ОБЛОЖКА</TD>
+<TD>БИБЛИОГРАФИЧЕСКАЯ ССЫЛКА</TD></TR>
+
+
+<TR style="background-color:#009878; color:#ffffff;"><TD width=40><P class=tab><irsns>ИРсНС</irsns></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="30" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr>Ингушско-русский словарь неизвестного составителя, впервые опубликованный по&nbsp;<a href="https://web.archive.org/web/20010819194100/http://ingush.narod.ru/lang/i-r.htm" style="color:#fff;">ссылке</a>.</P></TD></TR>
+
+
+<TR style="background-color:#ffffff; color:#000000;"><th rowspan="5" bgcolor="#DDFB00"><span class="vertext">Вошли в <irt16>И<k>РТ</k>16</irt16></span></th><TD><P class=tab><pti09>П<k>ТИ</k>09</pti09></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b>&nbsp;— Птицы: ингушско-русский словарь.&nbsp;— <i>2009</i></P></TD></TR>
+
+<TR style="background-color:#ffffff; color:#000000;"><TD><P class=tab><jiv09>Ж<k>ИВ</k>09</jiv09></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><s><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b>&nbsp;— Русско-ингушский словарь животных.&nbsp;— <i>2009</i></s></P></TD></TR>
+
+<TR style="background-color:#ffffff; color:#000000;"><TD><P class=tab><ras09>Р<k>АС</k>09</ras09></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><s><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b>&nbsp;— Русско-ингушский словарь растений.&nbsp;— <i>2009</i></s></P></TD></TR>
+
+<TR style="background-color:#ffffff; color:#000000;"><TD><P class=tab><ast14>А<k>СТ</k>14</ast14></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><s><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b>&nbsp;— Астрономические термины (инг.-рус. и рус.-инг. словари).&nbsp;— <i>2014</i></s></P></TD></TR>
+
+<TR style="background-color:#ffffff; color:#000000;"><TD><P class=tab><etn15>Э<k>ТН</k>15</etn15></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><s><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b>&nbsp;— Этнонимы. Русско-ингушский словарь.&nbsp;— <i>2015</i></s></P></TD></TR>
+
+
+
+
+<TR style="background-color:#c2af9a; color:#8e3635;"><th rowspan="3" bgcolor="#fff"></th><TD><P class=tab><dud15>Д<k>УД</k>15</dud15></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/dud15.png" class="img"></TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Дударов А.-М. М.</b> Земледелие ингушей (XIX&nbsp;— первая половина XX&nbsp;века): Историко-этнографический очерк.&nbsp;— <i>Нальчик: ООО&nbsp;«Тетраграф», 2015.&nbsp;— <nobr>С. 76—125</nobr></i></P></TD></TR>
+
+<TR style="background-color:#96391d; color:#D0B64E;"><TD><P class=tab><irt16>И<k>РТ</k>16</irt16></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/irt16.png" class="img"></TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Барахоева Н.М., Кодзоев Н.Д., Хайров Б.А.</b> Ингушско-русский и русско-ингушский словарь терминов: более 8200&nbsp;слов.&nbsp;— <i>Нальчик: ООО «Тетраграф», 2016.&nbsp;— <nobr>С.&nbsp;11—296</nobr></i></P></TD></TR>
+
+<TR style="background-color:#55a72a; color:#e3f4e5;"><TD><P class=tab><kodkt>К<k>ОД</k>КТ</kodkt></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/kodkt.png" class="img"></TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b> Словарь компьютерных терминов (английско-ингушско-русский, ингушско-русско-английский, русско-ингушско-английский) / Компутерца ювзаеннача терминий дошлорг.&nbsp;— <i>Назрань, 2016.&nbsp;— <nobr>С.&nbsp;24—40</nobr></i></P></TD></TR>
+
+
+<TR style="background-color:#471D1C; color:#ffffff;"><th rowspan="2" bgcolor="#DDFB00"><span class="vertext"><a href="AntDiffRep.html" target="_blank">сравнение</a></span></th><TD><P class=tab style="background-color:#ac5e42; padding:20px 0px 20px 0px;"><ant17>А<k>НТ</k>17</ant17></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/ant17.png" class="img"></TD>
+<TD><P class=tabv style="background-color:#ac5e42; padding:20px 0px 20px 0px;"><nobr>&nbsp;—&nbsp;</nobr><b>Тариева Л.У.</b> Русско-ингушский словарь антонимов.&nbsp;— <i>Нальчик: Издательство М.&nbsp;и&nbsp;В.&nbsp;Котляровых, 2017.&nbsp;— 224&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#000000; color:#ffffff;"><TD><P class=tab><ant21>А<k>НТ</k>21</ant21></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/ant21.png" class="img"></TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Тариева Л.У.</b> ГӀалгӀай метта антонимай дошлорг. / Словарь антонимов ингушского языка.&nbsp;— <i>Магас,&nbsp;ООО «КЕП», 2021.&nbsp;— 168&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#144D25; color:#D7D7DB;"><th rowspan="8" bgcolor="#fff"></th><TD><P class=tab><kod18>К<k>ОД</k>18</kod18></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/kod18.png" class="img"></TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Коазой Iийса.</b>&nbsp;— ГIалгIай метта ширача дешай да́шхара дошлорьг (дицденна а, дицлуш ла́тта а, дицдалар кхиерам бола а овла́ тIара доагIа гIалгIай дешаш). / <b>Кодзоев Исса.</b> Толковый словарь архаизмов и малоупотребительных слов ингушского языка.&nbsp;— <i>Наьсаре:&nbsp;«КЕП», 2018.&nbsp;— 272&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#FDA230; color:#000000;"><TD><P class=tab><med19>М<k>ЕД</k>19</med19></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b> Медицина. Русско-ингушский словарь.&nbsp;— <i>Назрань, ООО&nbsp;«КЕП», 2019&nbsp;— 44&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#1f3c8e; color:#B7AD98;"><TD><P class=tab><kod21>К<k>ОД</k>21</kod21></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/kod21.png" class="img"></TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Кодзоев Н.Д.</b> Русско-ингушский словарь (около 22 500 слов).&nbsp;— <i>Ростов&nbsp;н/Д, 2021.&nbsp;— 656&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#E91344; color:#ffffff;"><TD><P class=tab><raz01>Р<k>АЗ</k>01</raz01></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="90" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr>Названия месяцев по разным источникам и авторам:<br>
+• <b>Дахкильгов И.</b> Ноджган-цIай, или Как наши предки веселились //&nbsp;<i>Сердало.&nbsp;— 2013.12.31.&nbsp;— №199-200.&nbsp;— С.&nbsp;8</i><br>
+• <b>Мерешков С.</b> Керда шу. Мишта дездеш хиннад из дIаяхача хана вай даьша? //&nbsp;<i>Сердало.&nbsp;— 2016.12.10.&nbsp;— №187-188.&nbsp;— С.&nbsp;5</i><br>
+• <b>Патиев Я.</b> Как называть месяцы года по-ингушски? //&nbsp;<i>Сердало.&nbsp;— 2017.11.18.&nbsp;— №174.&nbsp;— С.&nbsp;2</i><br>
+• <b>Арчаков С.</b> ГIалгIай ханорг Iомадара халонаш //&nbsp;<i>Сердало.&nbsp;— 2018.06.05.&nbsp;— №84-86.&nbsp;— С.&nbsp;7</i><br>
+• <b>Матенаькъан И.</b> Шу&nbsp;— денош, кIираш, бетташ //&nbsp;<i>Сердало.&nbsp;— 2018.12.15.&nbsp;— №188-189.&nbsp;— С.&nbsp;5</i><br>
+• ГIалгIай ханорга 140 дизад //&nbsp;<i>Сердало.&nbsp;— 2021.02.06.&nbsp;— №17.&nbsp;— С.&nbsp;2</i></P></TD></TR>
+
+<TR style="background-color:#99AFCB; color:#ffffff;"><TD><P class=tab><uzh27>У<k>ЖА</k>27</uzh27></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Ужахов&nbsp;М.&nbsp;Г.</b> Ингушско-русский словарь.&nbsp;— <i>г.&nbsp;Орджоникидзе, Гостипография&nbsp;И.А.О., 1927&nbsp;— 185&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#E2C36C; color:#763600;"><TD><P class=tab><its33>ИТС33</its33></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/IngTerm1933.html"><b>Мальсагов&nbsp;З.&nbsp;К. (отв. редактор)</b> Ингушский терминологический сборник.&nbsp;— <i>г.&nbsp;Орджоникидзе, Типография&nbsp;«Сердало», 1933,&nbsp;май.&nbsp;— №1&nbsp;— 12&nbsp;с.</i></a></P></TD></TR>
+
+
+<TR style="background-color:#E91344; color:#ffffff;"><TD><P class=tab><raz01>Р<k>АЗ</k>02</raz01></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="90" width="60">&nbsp;</TD>
+<TD><P class=tabv style="padding-bottom:0;"><nobr>&nbsp;—&nbsp;</nobr>Отдельные слова из <jiv09>Ж<k>ИВ</k>09</jiv09>, <ras09>Р<k>АС</k>09</ras09>, <ast14>А<k>СТ</k>14</ast14></P>
+<P class=tabv style="padding-top:0;"><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/IngTafsir.html" style="color:darkblue; border-color:darkblue;">Ислам (Словарь к Тафсиру Корана на ингушском языке)</a></P></TD></TR>
+
+
+<TR style="background-color:#D300C9; color:#ffffff;"><TD><P class=tab><selaa><c1>С</c1><k><c2>Е</c2><c3>Л</c3><c4>А</c4><c5>А</c5><c6>Д</c6></k></selaa></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>«СелаӀад» («Радуга»).</b> — Детский журнал. <i>(Словари из 280-и номеров, без дублей в базе)</i></P></TD></TR>
+
+
+
+</TABLE>
+
+
+
+
+
+
+
+<p>Вторая и четвёртая колонки таблицы содержат заголовочные слова и переводные эквиваленты (соответствия/значения). Независимо от позиции входного или исходного языка в левой или правой части оригинального издания&nbsp;— здесь вторая колонка отведена для слов ингушского языка, четвёртая&nbsp;— для слов противоположной части (информация о представленных в колонке языках указывается в заголовке колонки). Также в базу не были включены дублирующие варианты переводов, излишние в табличном режиме, при имеющихся возможностях отбора, сортировки, смены местами колонок и т. п. Например, для Словаря терминов исключена русско-ингушская словарная часть, для Словаря компьютерных терминов&nbsp;— английско-ингушско-русская и рус.-инг.-англ. части.</p>
+
+<p>Третья и пятая колонки отведены для сокращенных лексикографических помет и тематического распределения слов согласно оригинальным текстам тематических или предметно-ориентированных словарей. Для размеченных этими пометами записей таблицы&nbsp;— по кнопке значка фильтра «<span class="dx-header-filter dx-header-filter-empty" tabindex="0"></span>» этих двух колонок&nbsp;— при необходимости отбираются слова, принадлежащие к специальной сфере употребления. Напр.: <i>анат.</i>, «<i>Компьютерные термины</i>» и др. Расшифровать принятые сокращения можно, обратившись к <a href="#2">Сводному списку сокращений</a>.</p>
+
+<p>Каждая из колонок поддерживает сортировку по клику или пункту контекстного меню в её заголовке, а также изменение ширины столбцов и их порядка, путём перетаскивания или скрытия. Сразу после запуска или по результатам поисков&nbsp;— в заголовке второй колонки отображается общее количество записей в таблице.</p>
+
+
+<div id="2"></div><h2>СВОДНЫЙ СПИСОК СОКРАЩЕНИЙ</h2>
+
+
+<div class="thumbnails" style="font-size:90% !important; margin:0pt !important; text-indent:0em !important;">
+    <ins class="thumbnail">
+        <div class="r">
+
+<ul>
+<li><i><b>а</b>нат.</i>&nbsp;—&nbsp;анатомическое<br>
+<li><i>арх.</i>&nbsp;—&nbsp;архипелаг<br>
+<li><i>астр.</i>&nbsp;—&nbsp;астрономическое<br>
+<li><i>афф.</i>&nbsp;—&nbsp;аффективни<br>
+<li><i><b>б</b>укв.</i>&nbsp;—&nbsp;буквально<br>
+<li><i>биол.</i>&nbsp;—&nbsp;биологическое<br>
+<li><i><b>в</b>водн. сл.</i>&nbsp;—&nbsp;вводное&nbsp;слово<br>
+<li><i><b>г</b>.</i>&nbsp;—&nbsp;город<br>
+<li><i>г.&nbsp;с.</i>&nbsp;—&nbsp;горная&nbsp;система<br>
+<li><i>геогр.</i>&nbsp;—&nbsp;географическое<br>
+<li><i>глаг./<b>х</b>анд.</i>&nbsp;—&nbsp;глагол/хандош<br>
+<li><i>гор.</i>&nbsp;—&nbsp;гора<br>
+<li><i>гос.</i>&nbsp;—&nbsp;государство<br>
+<li><i>грамм.</i>&nbsp;—&nbsp;грамматическое<br>
+<li><i><b>д</b>етск.</i>&nbsp;—&nbsp;детское<br>
+<li><i>досл.</i>&nbsp;—&nbsp;дословно<br>
+<li><i><b>з</b>оол.</i>&nbsp;—&nbsp;зоологическое<br>
+<li><i><b>к</b>онт.</i>&nbsp;—&nbsp;континент<br>
+<li><i><b>л</b>ат.</i>&nbsp;—&nbsp;латинский<br>
+<!-- 
+        </div>
+    </ins>
+    <ins class="thumbnail">
+        <div class="r">
+ -->
+<li><i>лингв.</i>&nbsp;—&nbsp;лингвистическое<br>
+<li><i><b>м</b>.</i>&nbsp;—&nbsp;местность<br>
+<li><i>масд.</i>&nbsp;—&nbsp;масдар<br>
+<li><i>мат.</i>&nbsp;—&nbsp;математическое<br>
+<li><i>мед.</i>&nbsp;—&nbsp;медицинское<br>
+<li><i>межд./<b>а</b>йдард.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;междометие/айдардош</nobr><br>
+<li><i>мест./<b>ц</b>Ӏерм.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;местоимение/цӀерметтдош</nobr><br>
+<li><i>мн.&nbsp;ч.</i>&nbsp;—&nbsp;множественное&nbsp;число<br>
+<li><i>мус.</i>&nbsp;—&nbsp;мусульманское<br>
+<li><i><b>н</b>ареч./<b>к</b>уцд.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;наречие/куцдош</nobr><br>
+<li><i>насек.</i>&nbsp;—&nbsp;насекомое<br>
+<li><i>науч.</i>&nbsp;—&nbsp;научное<br>
+<li><i>неол.</i>&nbsp;—&nbsp;неологизм<br>
+<li><i><b>о</b>.</i>&nbsp;—&nbsp;остров<br>
+<li><i>оз.</i>&nbsp;—&nbsp;озеро<br>
+<li><i>оруж.</i>&nbsp;—&nbsp;оружие<br>
+<li><i><b>п</b>-в</i>&nbsp;—&nbsp;полуостров<br>
+<li><i>п.</i>&nbsp;—&nbsp;пустыня<br>
+<li><i>пос.</i>&nbsp;—&nbsp;поселение<br>
+
+</ul>
+        </div>
+    </ins>
+    <ins class="thumbnail">
+        <div class="r">
+
+<ul>
+
+<li><i>посл./<b>д</b>ештӀ.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;послелог/дештӀехье</nobr><br>
+<li><i>предл.</i>&nbsp;—&nbsp;предлог<br>
+<li><i>прил./<b>б</b>елг.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;прилагательное/белгалдош</nobr><br>
+<li><i>прис.&nbsp;союз</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;присоединительный&nbsp;союз</nobr><br>
+<li><i>прич.</i>&nbsp;—&nbsp;причастие<br>
+<li><i>прот.&nbsp;союз</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;противительный&nbsp;союз</nobr><br>
+<li><i><b>р</b>азг.</i>&nbsp;—&nbsp;разговорное<br>
+<li><i>разд.&nbsp;союз</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;разделительный&nbsp;союз</nobr><br>
+<li><i>раст.</i>&nbsp;—&nbsp;растение<br>
+<li><i>рел.</i>&nbsp;—&nbsp;религиозное<br>
+<li><i>рес.</i>&nbsp;—&nbsp;республика&nbsp;в&nbsp;составе&nbsp;РФ<br>
+<li><i><b>с</b>.&nbsp;п.</i>&nbsp;—&nbsp;сельское&nbsp;поселение<br>
+<li><i>собир.</i>&nbsp;—&nbsp;собирательное<br>
+<li><i>совр.</i>&nbsp;—&nbsp;современное<br>
+<li><i>семант.</i>&nbsp;—&nbsp;семантический<br>
+<!-- 
+        </div>
+    </ins>
+    <ins class="thumbnail">
+        <div class="r">
+ -->
+<li><i>синт.</i>&nbsp;—&nbsp;синтаксис<br>
+<li><i>соед.&nbsp;союз</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;соединительный&nbsp;союз</nobr><br>
+<li><i>созв.</i>&nbsp;—&nbsp;созвездие<br>
+<li><i>субст.</i>&nbsp;—&nbsp;субстантивированное<br>
+<li><i>сущ./<b>ц</b>Ӏерд.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;существительное/цӀердош</nobr><br>
+<li><i><b>т</b>ерр.</i>&nbsp;—&nbsp;территория<br>
+<li><i>техн.</i>&nbsp;—&nbsp;техническое<br>
+<li><i><b>у</b>меньш.</i>&nbsp;—&nbsp;уменьшительное<br>
+<li><i>уст.</i>&nbsp;—&nbsp;устаревшее<br>
+<li><i><b>ф</b>изиол.</i>&nbsp;—&nbsp;физиологическое<br>
+<li><i>фольк.</i>&nbsp;—&nbsp;фольклорное<br>
+<li><i>фон.</i>&nbsp;—&nbsp;фонетический<br>
+<li><i><b>х</b>.</i>&nbsp;—&nbsp;хребет<br>
+<li><i><b>ч</b>.&nbsp;с.</i>&nbsp;—&nbsp;часть&nbsp;света<br>
+<li><i>част./<b>д</b>акъ.</i>&nbsp;—&nbsp;<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;частица/дакъилг</nobr><br>
+<li><i>числ.</i>&nbsp;—&nbsp;числительное<br>
+<li><i><b>э</b>тн.</i>&nbsp;—&nbsp;этноним<br>
+
+</ul>
+
+        </div>
+    </ins>
+</div>
+
+
+
+
+
+
+
+<div id="3"></div><h2>ЛЕКСИКОГРАФИЧЕСКИЕ ЗНАКИ</h2>
+
+<blockquote>
+<TABLE width=100% cellspacing=0 cellpadding=0 style="font-size:90% !important;"> 
+<TR><TD><nobr>||&nbsp;&nbsp;&nbsp;—&nbsp;</nobr>две прямые линии отделяют неизменяемую часть слова от изменяемой.</TD></TR>
+<TR><TD><nobr>//&nbsp;&nbsp;&nbsp;—&nbsp;</nobr>две или одна наклонные черты разделяют вариативные элементы.</TD></TR>
+<TR><TD>Звёздочкой (*) обозначены слова, не получившие распространения в ингушском языке (<pti09>П<k>ТИ</k>09</pti09>)</TD></TR>
+</TABLE>
+</blockquote>
+
+
+<div id="4"></div><h2>ПОИСК И ФИЛЬТРАЦИЯ</h2>
+
+<p>Поиск не чувствителен к регистру букв, к знакам ударения и к имеющейся в таблице диакритике<!--  [[[https://jsfiddle.net/s2yo99de/]]] -->. <!-- Все тексты в базе ёфицированы и -->Набор буквы «е» вместо «ё» не влияет на результат.</p>
+
+<p>Вместо используемой в базе ингушской буквы «<a href="https://ru.wikipedia.org/wiki/Палочка_(кириллица)">Ӏ</a>» (Ӏa), во всех поисковых полях для удобства допустимо набирать/вставлять из буфера обмена&nbsp;— единицу, латинскую строчную букву «<font color="#0000FF">l</font>», латинскую прописную «<font color="#0000FF">I</font>», или греческую букву «<font color="#0000FF">Ι</font>»&nbsp;— которые в буквенных сочетаниях будут соответственно преобразованы. То есть, любые из перечисленных символов в тексте, набранные вручную или скопированные из буфера обмена, будут преобразованы согласно ингушской графике.</p>
+
+<p>Для изданий, использующих две прямые линии («<font color="#0000FF">||</font>») для отделения изменяемой части слова&nbsp;— возможен поиск по формам множественного числа, произведённых от неизменяемой части. Так, при поиске слов «<code>бордз</code>» или «<code>бертий</code>», будет найдено соответствие <nobr>«<font color="#0000FF"><font color="#F41224">б</font>||ордз (-<font color="#F41224">ертий</font>)</font>».</nobr></p>
+
+<p>Поиск может производиться по каждой из колонок&nbsp;— по полям поисковых фильтров в их заголовках, либо сразу по всей таблице, через форму поиска, закреплённую справа внизу&nbsp;— отображая результаты, которые удовлетворяют заданным условиям в каждом из заполненных полей. В сочетании с фильтрацией (значки «<span class="dx-header-filter dx-header-filter-empty" tabindex="0"></span>» в заголовках трёх столбцов), отображающей разницу всего содержимого колонки без дублей, это позволит максимально «сузить» пространство поиска, устанавливая фильтры как путём выбора данных, так и путем ввода значений фильтров. Например, в первой колонке («<i>Источники</i>») можно в фильтре отобрать два словаря из списка, поставив галки напротив соответствующих условий фильтрации, затем выбрать нужные пункты для фильтра из колонок 3-й и 5-й (если таковых несколько в каждом&nbsp;— либо вписав в поисковое поле фильтра запрос для одного вхождения)&nbsp;— и далее уточнять результаты через поисковые строки<!-- фильтры по отдельным колонкам и через глобальный поиск -->.</p>
+
+<p>При новом поиске следует учитывать состояние какого-либо из фильтров или поисков, так как изменения их установок будут воздействовать на следующие поисковые запросы. В этом случае значок фильтра подсвечивается красным, а поисковые поля содержат предыдущий поисковый запрос. Чтобы отменить фильтрацию, нужно снять выбранные в фильтре пункты двойным щелчком по «<i>Выбрать все</i>» и нажатием <i>ОК</i>, а для текстовых запросов&nbsp;— сбросить их через выпадающие пункты «<i>Сбросить</i>» слева от каждого поискового поля с фильтром<!-- , либо нажатием на кнопку «<span class="dx-icon dx-icon-clear"></span>» в поле «<i>Глобального поиска</i>» -->.</p>
+
+<p>Прикрепленный внизу «Глобальный поиск» работает по принципу простого поиска соответствий по всей таблице и в любой позиции текста. Поиск в начальной позиции слов, или поиск целых слов (опция включается по кнопке слева от фильтра из выпадающего списка)&nbsp;— возможен в закрепленных в заголовках колонок поисковых фильтрах, с использованием <i>подстановочных знаков</i> и <i>регулярных выражений</i>.</p>
+
+<blockquote>
+
+<p><a href="https://ru.wikipedia.org/wiki/Символ_подстановки">Подстановочные знаки</a> — это специальные символы, которые могут заменять неизвестные символы в текстовом значении, позволяя, например, найти любое слово с неизвестным правописанием по опорным буквам. В поиске по таблице используются следующие подстановочные знаки.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="delivery">
+<thead>
+<tr>
+<th width="70">П.&nbsp;знак</th>
+<th width="50%">Описание</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td aria-label="П.&nbsp;знак" class="delivery_th"><p><code>@</code></p></td>
+<td aria-label="Описание"><p>Соответствует отдельной букве в слове.</p></td>
+<td aria-label="Пример"><p>По запросу <code>к<font class="font">@</font>р</code> будут найдены слова «<font color="#0000FF">к<font color="#F41224">о</font>р</font>», «<font color="#0000FF">к<font color="#F41224">е</font>р</font>», «<font color="#0000FF">к<font color="#F41224">и</font>р</font>» и «<font color="#0000FF">к<font color="#F41224">у</font>р</font>».</p><p><font color="#FF0000"><b>*</b></font> <font color="#BB1414">(При поиске коротких слов, для исключения лишних результатов, опция «Целые слова» должна быть включена, см.&nbsp;<a target="_blank" href="src/img/search.png">скрин</a>)</font></p></td>
+</tr>
+<tr>
+<td aria-label="П.&nbsp;знак" class="delivery_th"><p><code>,</code></p></td>
+<td aria-label="Описание"><p>Символ запятой соответствует нулю или более неизвестных букв в слове.</p></td>
+<td aria-label="Пример"><p>По запросу <code>ц,г,л</code> будут найдены слова «<font color="#0000FF">ц<font color="#F41224">хьоа</font>г<font color="#F41224">Ӏа</font>л</font>», «<font color="#0000FF">ц<font color="#F41224">хьо</font>г<font color="#F41224">а</font>л</font>», «<font color="#0000FF">ц<font color="#F41224">хьуо</font>г<font color="#F41224">а</font>л</font>», «<font color="#0000FF">ц<font color="#F41224">о</font>г<font color="#F41224">а</font>л</font>».</p></td>
+</tr>
+<tr>
+<td aria-label="П.&nbsp;знак" class="delivery_th"><p><code>,,</code></p></td>
+<td aria-label="Описание"><p>Две запятые соответствуют любому количеству произвольных символов.</p></td>
+<td aria-label="Пример"><p>По запросу <code>ц,,ал</code> будет найдено вхождение «<font color="#0000FF">ц<font color="#F41224">хьоалагӀа ноах</font>ал</font>».</p></td>
+</tr>
+<tr>
+<td aria-label="П.&nbsp;знак" class="delivery_th"><p><code>&lt;</code></p></td>
+<td aria-label="Описание"><p>Открывающая угловая скобка соответствует гласной букве ингушского алфавита (с учётом буквосочетаний&nbsp;— «двойных букв»):</p><p><code>а</code>|<code>аь</code>|<code>е</code>|<code>ё</code>|<code>и</code>|<code>о</code>|<code>у</code>|<code>ы</code>|<code>э</code>|<code>ю</code>|<code>я</code>|<code>яь</code></p></td>
+<td aria-label="Пример"><p>По запросу <code>гӀ&lt;м</code> будут найдены слова «<font color="#0000FF">гӀ<font color="#F41224">аь</font>м</font>», «<font color="#0000FF">гӀ<font color="#F41224">а</font>м</font>» и&nbsp;т.&nbsp;д.</p></td>
+</tr>
+<tr>
+<td aria-label="П.&nbsp;знак" class="delivery_th"><p><code>&gt;</code></p></td>
+<td aria-label="Описание"><p>Закрывающая угловая скобка соответствует согласной букве ингушского алфавита (с учётом буквосочетаний&nbsp;— «двойных букв»):</p><p><code>б</code>|<code>в</code>|<code>г</code>|<code>гӀ</code>|<code>д</code>|<code>ж</code>|<code>з</code>|<code>к</code>|<code>кх</code>|<code>къ</code>|<code>кӀ</code>|<code>л</code>|<code>м</code>|<code>н</code>|<code>п</code>|<code>пӀ</code>|<code>р</code>|<code>с</code>|<code>т</code>|<code>тӀ</code>|<code>ф</code>|<code>х</code>|<code>хь</code>|<code>хӀ</code>|<code>ц</code>|<code>цӀ</code>|<code>ч</code>|<code>чӀ</code>|<code>ш</code>|<code>щ</code>|<code>Ӏ</code></p></td>
+<td aria-label="Пример"><p>По запросу <code>&gt;ам</code> будут найдены слова «<font color="#F41224">гӀ</font><font color="#0000FF">ам</font>», «<font color="#F41224">г</font><font color="#0000FF">ам</font>» и&nbsp;т.&nbsp;д.</p><p>По запросу <code>&gt;+ы</code> будут найдены односложные слова, оканчивающиеся на букву «<font color="#0000FF">ы</font>».</p></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<p><a href="https://ru.wikipedia.org/wiki/Регулярные_выражения">Регулярные выражения</a> (<i>regular expressions</i>, сокращенно <i>regexp</i>, <i>regex</i>)&nbsp;— это один из способов поиска соответствий в строках по заданному шаблону.</p>
+
+
+
+
+<table class="delivery">
+<thead>
+<tr>
+<th width="70">Р.&nbsp;симв.</th>
+<th width="50%">Описание</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td aria-label="Р.&nbsp;симв." class="delivery_th"><p><code>\d</code></p></td>
+<td aria-label="Описание"><p>Соответствует любому цифровому символу.</p></td>
+<td aria-label="Пример"><p>По запросу <code>\d+</code> будут найдены все строки с цифрами.</p></td>
+</tr>
+<tr>
+<td aria-label="Р.&nbsp;симв." class="delivery_th"><p><code>[ ]</code></p></td>
+<td aria-label="Описание"><p>Соответствует символам в скобках.</p></td>
+<td aria-label="Пример"><p>По запросу <code>в[ыу]</code> будут найдены слова, в которых после буквы «<font color="#0000FF">в</font>» следуют буквы «<font color="#0000FF">ы</font>» или «<font color="#0000FF">у</font>».</p>
+                <p><code>[0234]</code> — найти все строки с перечисленными цифрами.</p></td>
+</tr>
+<tr>
+<td aria-label="Р.&nbsp;симв." class="delivery_th"><p><code>^</code></p></td>
+<td aria-label="Описание"><p>Исключает символы в скобках.</p></td>
+<td aria-label="Пример"><p>По запросу <code>в[^ыу]</code> будут найдены слова, в которых после буквы «<font color="#0000FF">в</font>» следует любой символ, кроме «<font color="#0000FF">ы</font>» или «<font color="#0000FF">у</font>».</p></td>
+</tr>
+<tr>
+<td aria-label="Р.&nbsp;симв." class="delivery_th"><p><code>-</code></p></td>
+<td aria-label="Описание"><p>Соответствует диапазону символов.</p></td>
+<td aria-label="Пример"><p><code>[2-4]</code> — найти все строки с цифрами в диапазоне.</p></td>
+</tr>
+<tr>
+<td aria-label="Р.&nbsp;симв." class="delivery_th"><p><code>\b</code></p></td>
+<td aria-label="Описание"><p>Соответствует границе слова.</p></td>
+<td aria-label="Пример"><p><code>аз\b</code> — найти целые слова «<font color="#0000FF">аз</font>».</p></td>
+</tr>
+<tr>
+<td aria-label="Р.&nbsp;симв." class="delivery_th"><p><code>(?:)</code></p></td>
+<td aria-label="Описание"><p>Группировка без обратной связи.</p></td>
+<td aria-label="Пример"><p><code>^(?:(?!имя).)*$</code> — исключить строки, содержащие слово «<font color="#0000FF">имя</font>».</p></td>
+</tr>
+<tr>
+<td colspan=3><p><b><a href="https://i.imgur.com/dhNSdRZ.png">. . .</a></b></p>
+</tr></td>
+</tbody>
+</table>
+
+
+
+
+<!-- <p>Например, для поиска за один запрос слов: «<font color="#0000FF">цхьоагӀал</font>/<font color="#0000FF">цхьогал</font>/<font color="#0000FF">цхьуогал</font>/<font color="#0000FF">цогал</font>»&nbsp;— можно использовать следующий шаблон в колонке с ингушским языком,&nbsp;— «<code>ц*г*л</code>» (или для упрощения ввода с телефона&nbsp;— с символом запятой [<code>,</code>] вместо символа астериска/звёздочки: «<code>\\\ц,г,л///</code>»), где&nbsp;—</p>
+
+<ul>
+<li>«<code>\\\</code>»&nbsp;— это назначенное здесь для упрощения быстрого ввода с клавиатуры обозначение начальной границы слова, которое после ввода будет преобразовано в шаблон «<code>(^|\s|[^\u0400-\u04FF]|\b)</code>».</li>
+
+<li>«<code>*</code>» (или «<code>,</code>»)&nbsp;— это шаблон «<code>[a-zа-яёΙIl1Ӏ]+</code>»&nbsp;— совпадающий с любым сочетанием латиницы и кириллицы без пробелов, в которой так же может присутствовать инг. буква «Ӏ» в одном из вариантов.</li>
+
+<li>«<code>///</code>»&nbsp;— это быстрое обозначение концевой границы слова, которое после ввода будет преобразовано в шаблон «<code>(?=\s|[^\u0400-\u04FF]|\b|$)</code>».</li>
+</ul>
+
+<p>Таким образом, для поиска границ слов достаточно вводить сочетание символов</p>
+<ul>
+<li>«<code>\\\</code>»&nbsp;— перед буквой,</li>
+
+<li>«<code>///</code>»&nbsp;— после буквы,</li>
+
+<li>«<code>*</code>» (или «<code>,</code>»)&nbsp;— для поиска N букв (напр.: «<font color="#0000FF">ц<font color="#F41224">*</font>гал</font>»&nbsp;— <font color="#0000FF">ц<font color="#F41224">хьо</font>гал</font>, <font color="#0000FF">ц<font color="#F41224">о</font>гал</font> и&nbsp;т.&nbsp;д.),</li>
+
+<li>«<code>.</code>»&nbsp;— вместо одного произвольного символа («<font color="#0000FF">ц<font class="font" color="#F41224">.</font>гал</font>»&nbsp;— <font color="#0000FF">ц<font color="#F41224">о</font>гал</font>),</li>
+
+<li>«<code>.*</code>»&nbsp;— вместо любого количества произвольных символов («<font color="#0000FF">ц<font class="font" color="#F41224">.</font><font color="#F41224">*</font>ал</font>»&nbsp;— <font color="#0000FF">ц<font color="#F41224">хьоалагӀа ноах</font>ал</font>),</li>
+
+</ul> -->
+
+
+
+<p><font color="#BB1414">При поиске с участием спецсимволов, когда например в полях с поддержкой RegEx, нужно найти один из перечисленных символов&nbsp;— «<code>. ^ $ * + ? { } [ ] \ | ( )</code>»&nbsp;— их необходимо экранировать, путём добавления обратного слеша («<code>\</code>») перед спецсимволом. </font></p>
+
+</blockquote>
+
+
+<div id="5"></div><h2>ЗАПЛАНИРОВАНО</h2>
+
+<p>Список имеющихся в эл. виде словарей, запланированных к добавлению в базу:</p>
+
+<blockquote>
+<TABLE width=100% cellspacing=0 cellpadding=0 style="font-size:90% !important;"> 
+<TR><TD>1925&nbsp;— Мальсагов З.К. Ингушская грамматика (со сборником ингушских слов)</TD></TR>
+<TR><TD>1929&nbsp;— Мальсагов И.&nbsp;— Русско-ингушский словарь</TD></TR>
+<TR><TD>1941&nbsp;— Муталиев Х.-Б.&nbsp;— Русско-ингушский словарь (для нач. шк.)</TD></TR>
+<!-- <TR><TD>1962&nbsp;— ГIалгIай-нохчий-эрсий словарь</TD></TR>
+<TR><TD>1962&nbsp;— Нохчийн-гIалгIайн-оьрсийн словарь</TD></TR> -->
+<TR><TD>1980&nbsp;— Оздоев И.А.&nbsp;— Русско-ингушский словарь</TD></TR>
+<TR><TD>1995&nbsp;— Картоев М.У.&nbsp;— Краткий словарь ингушской общественно-политической лексики</TD></TR>
+<TR><TD>2005&nbsp;— Куркиев А.С.&nbsp;— Ингушско-русский словарь</TD></TR>
+<TR><TD>2009&nbsp;— Тариева Л.У. и др.&nbsp;— Ингушско-русский словарь</TD></TR>
+<!-- <TR><TD>2010&nbsp;— Кодзоев Т.А.&nbsp;— Модернизированный ингушско-русский словарь</TD></TR>
+-->
+</TABLE>
+</blockquote>
+
+<p>Если будут желающие поучаствовать в пополнении базы, можно попробовать совместно произвести верификацию распознанных пакетов определенного издания по 20—30 страниц&nbsp;— уточнить форматирование, исправить неточности и тп. Готовые принять участие в такой работе, могут отписаться в комментариях внизу страницы, как и в случае обнаружения неточностей в материалах базы.</p>
+
+
+
+<div id="6"></div><h2>СКАЧАТЬ</h2>
+
+<p>Для работы в оффлайн-режиме, возможна загрузка в память смартфона, планшета или компьютера. На устройствах с небольшими экранами&nbsp;— из контекстного меню в заголовке таблицы, или по прикреплённой справа внизу кнопке <span class="dx-button"><span class="dx-icon dx-icon-overflow"></span></span> — можно скрывать мешающие просмотру столбцы. В случае обновлений, информацию о них планируется размещать в <a style="color:#777777;" href="https://www.instagram.com/ghalghay_project" target="_blank">Instagram</a>.</p>
+
+<p><b><a class="download" href="https://ghalghay.github.io/ingcorpora.zip">ingcorpora.zip</a></b> (2,77&nbsp;МБ, версия от&nbsp;15.06.2022).</p>
+
+
+<center>
+<div style="margin-top:1.5em;"></div>
+
+<span class="svg_pic pic_big" href="/" title="Älti-jurt">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="150.000000pt" height="144.000000pt" viewBox="0 0 160.000000 154.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,154.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="#FFFFFF" stroke-width="5">
+<path d="M440 1458 l-25 -11 31 -8 c63 -18 71 -38 77 -204 7 -166 -2 -211 -42
+-232 -20 -9 -30 -9 -53 3 -25 13 -28 19 -28 68 0 36 -7 67 -23 97 -12 24 -21
+54 -19 67 4 29 36 46 61 33 25 -14 31 -5 19 30 -19 54 -83 66 -122 24 l-23
+-25 -9 33 c-7 24 -20 37 -51 52 -22 11 -50 28 -61 38 -20 18 -20 18 -7 -20 8
+-21 14 -52 15 -69 0 -18 8 -39 20 -49 22 -20 18 -35 -10 -35 -27 0 -40 -30
+-40 -92 l0 -53 21 33 c31 47 64 52 101 15 22 -22 32 -43 35 -77 5 -45 5 -46
+-55 -105 -34 -33 -68 -75 -76 -94 -10 -25 -16 -99 -21 -259 -6 -190 -9 -227
+-24 -248 -10 -14 -28 -26 -40 -28 -30 -5 -26 -19 11 -42 41 -25 53 -25 78 0
+l21 21 17 -21 c24 -29 79 -36 127 -15 l40 17 -41 14 c-95 33 -114 87 -114 325
+0 104 4 178 11 193 16 34 60 52 91 35 34 -18 35 -22 43 -138 10 -147 33 -218
+89 -269 56 -52 112 -68 180 -53 45 10 102 42 118 65 17 25 15 -4 -4 -59 -33
+-95 -29 -189 12 -303 l34 -92 39 107 c33 94 37 116 33 169 -3 33 -12 80 -21
+105 -9 24 -18 54 -21 66 -4 20 -2 20 28 -8 30 -27 110 -59 147 -59 39 0 96 24
+131 56 63 57 82 117 94 302 6 85 16 107 52 116 33 9 71 -15 85 -52 7 -17 9
+-97 7 -207 -5 -216 -15 -253 -81 -284 -23 -10 -49 -21 -57 -24 -18 -6 49 -37
+80 -37 26 0 80 27 80 41 0 5 13 0 29 -12 27 -20 33 -21 61 -9 38 16 60 50 32
+50 -10 0 -28 10 -39 23 -20 20 -22 38 -28 252 -5 154 -11 241 -20 262 -8 18
+-41 59 -74 92 -55 53 -61 63 -61 100 0 31 7 49 31 76 17 19 38 35 46 35 9 0
+31 -16 49 -36 l34 -35 0 55 c0 60 -22 96 -57 96 -15 0 -14 3 5 18 15 12 29 40
+40 87 l18 70 -58 -28 c-59 -29 -88 -58 -88 -89 0 -24 -16 -23 -23 2 -6 22 -46
+35 -83 26 -16 -4 -30 -19 -40 -41 -19 -45 -18 -46 12 -35 37 15 64 -3 64 -42
+0 -17 -7 -40 -16 -50 -10 -10 -19 -41 -21 -70 -6 -82 -11 -94 -38 -106 -19 -9
+-32 -9 -46 -1 -38 20 -49 69 -49 214 0 162 10 197 64 216 49 18 45 29 -9 29
+-32 0 -51 -6 -65 -20 l-20 -20 -20 20 c-20 20 -63 26 -94 14 -13 -5 -9 -10 16
+-24 53 -28 58 -47 58 -235 0 -165 1 -171 25 -207 14 -21 45 -49 70 -64 55 -32
+60 -47 52 -171 -5 -94 -12 -117 -25 -97 -24 37 -78 36 -115 -1 -25 -25 -21
+-31 21 -27 80 8 95 -67 23 -115 -48 -32 -98 -30 -149 6 -44 33 -57 63 -68 154
+l-6 58 44 38 c58 52 87 104 69 125 -19 22 -37 20 -77 -10 l-34 -26 0 166 c0
+164 0 167 25 191 13 14 36 25 50 25 32 0 32 14 0 28 -34 16 -68 15 -84 0 -12
+-11 -13 -9 -6 7 17 42 16 91 -3 133 l-19 43 -17 -44 c-19 -49 -21 -90 -5 -119
+13 -23 4 -37 -13 -20 -15 15 -40 15 -73 0 -31 -14 -32 -28 -1 -28 13 0 35 -12
+50 -26 26 -27 26 -27 26 -191 0 -156 -1 -163 -18 -154 -10 5 -24 17 -32 25
+-24 30 -70 13 -70 -25 0 -9 25 -43 57 -76 l56 -58 -2 -60 c-3 -87 -17 -122
+-63 -156 -51 -36 -101 -38 -149 -6 -72 48 -58 117 24 117 l40 0 -19 21 c-32
+36 -62 42 -99 20 l-33 -19 -6 37 c-9 57 -7 181 4 201 6 11 26 27 46 36 19 9
+47 33 62 52 26 35 27 39 32 216 5 197 10 215 60 236 23 9 28 15 18 21 -23 15
+-77 10 -95 -9 -17 -17 -19 -17 -43 0 -32 22 -69 28 -100 16z"/>
+</g>
+</svg>
+</span>
+</center>
+
+
+</div>
+</div>
+</div>
+
+<p style="margin:1em 0 0em 0; text-align:right; font-size:70%;">DD</p>
+
+
+
+<div id="vk_comments"></div>
+<script type="text/javascript">
+ VK.Widgets.Comments('vk_comments');
+</script>
+
+
+
+
+
+
+</body>
+</html>
+

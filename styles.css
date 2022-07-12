@@ -1,0 +1,218 @@
+﻿@charset "UTF-8";
+
+
+
+@font-face {
+	font-family:Stolzl;
+	font-style:normal;
+	font-weight:400;
+	src:url("fonts/stolzl.eot?#iefix") format("embedded-opentype"),
+		url("fonts/stolzl.woff2") format("woff2"),
+		url("fonts/stolzl.woff") format("woff"),
+		url("fonts/stolzl.ttf") format("truetype"),
+		url("fonts/stolzl.svg#Stolzl") format("svg")
+}
+
+
+
+@font-face{font-family:"Lava 3";src:url(fonts/WF-024344-008038-001181-e3fb2d41c1a686cda868d9ff259ddca8cc26fa0b2102c44b0d3ac9b439b68232.eot);src:url(fonts/WF-024344-008038-001181-e3fb2d41c1a686cda868d9ff259ddca8cc26fa0b2102c44b0d3ac9b439b68232.eot?#iefix) format("embedded-opentype"),url(fonts/WF-024344-008038-001181-876a4e5d82130d797346478095b09ae211b47435c9d65ec8191f59aec1acd6b3.woff) format("woff"),url(fonts/WF-024344-008038-001181-009be94ba136378f9300ae675836909e6be34c67cbd0fc2e0b246a2d0769907b.ttf) format("truetype"),url(fonts/WF-024344-008038-001181-b09004761559d005fca17a8de6063c194f13ad25f1304bf870b45152f98afc27.svg#typotheque_webfonts_service) format("svg");font-style:Normal;font-weight:400;font-stretch:normal}
+
+@font-face{font-family:"Lava 3";src:url(fonts/WF-024344-008038-001182-e458972f5c7ee34679d144e9f5e8e5ef01cf4b37949f8b68461498237fcb6a9c.eot);src:url(fonts/WF-024344-008038-001182-e458972f5c7ee34679d144e9f5e8e5ef01cf4b37949f8b68461498237fcb6a9c.eot?#iefix) format("embedded-opentype"),url(fonts/WF-024344-008038-001182-9f243506a012b50e135195911251f051918892e01dc216c6677274d1f1ef3849.woff) format("woff"),url(fonts/WF-024344-008038-001182-6daf9339f30e6dc57fe7984807ee64f7c9cc324d01dbdd17215b4708383b8ce4.ttf) format("truetype"),url(fonts/WF-024344-008038-001182-01d6023b89a4dcd1dd3c50f18e6fbc9bbdc5edfea55ea83ebda4bc7f3d9bbb8f.svg#typotheque_webfonts_service) format("svg");font-style:Italic;font-weight:400;font-stretch:normal}
+
+@font-face{font-family:"Lava 3";src:url(fonts/WF-024344-008038-001185-eec3a5d107f3c1f53c18d33afd98f1fcc1547887b2e8177c2a04f7e0bb854052.eot);src:url(fonts/WF-024344-008038-001185-eec3a5d107f3c1f53c18d33afd98f1fcc1547887b2e8177c2a04f7e0bb854052.eot?#iefix) format("embedded-opentype"),url(fonts/WF-024344-008038-001185-ea14dc7ff89b9a87b0122cde06d2cc4230fceea786e44228e7868f52acd85c7d.woff) format("woff"),url(fonts/WF-024344-008038-001185-f538df08121ea46d5d8b08fcec10f33371cd1cd4512dbed6d66524b9b2b8ee35.ttf) format("truetype"),url(fonts/WF-024344-008038-001185-26569734fb10cded5722277159936557183af1b73ea752c4abd7995b9e7782c2.svg#typotheque_webfonts_service) format("svg");font-style:Normal;font-weight:700;font-stretch:normal}
+
+@font-face{font-family:"Lava 3";src:url(fonts/WF-024344-008038-001187-15cf0ab820da02eb91bb7c9fd49692b32baa39af538678195f2419a82893c883.eot);src:url(fonts/WF-024344-008038-001187-15cf0ab820da02eb91bb7c9fd49692b32baa39af538678195f2419a82893c883.eot?#iefix) format("embedded-opentype"),url(fonts/WF-024344-008038-001187-918e4ff374094c888395ba5c471defa5087b327468af357fb0b9f3284acb75bd.woff) format("woff"),url(fonts/WF-024344-008038-001187-9776ccc9c9a2596d0f8c2fa30fe727955b32d043723180f40983b67932aa9a65.ttf) format("truetype"),url(fonts/WF-024344-008038-001187-f71b498ac97a1ae67b6d973c4db199e02f7b4d778eec765b31894d1d46b2d0e0.svg#typotheque_webfonts_service) format("svg");font-style:Normal;font-weight:800;font-stretch:normal}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: ApercuPro;
+    src: url(fonts2/apercu-regular-pro.eot);
+    src: url(fonts2/apercu-regular-pro.eot?#iefix) format("embedded-opentype"), url(fonts2/apercu-regular-pro.woff) format("woff"), url(fonts2/apercu-regular-pro.woff2) format("woff2"), url(fonts2/apercu-regular-pro.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Lazurski;
+    src: url(fonts2/LZR45.ttf)
+}
+
+@font-face {
+    font-family: 'custom-fa';
+    src: url(fonts2/custom-fa.eot?86449202);
+    src: url('fonts2/custom-fa.eot?86449202#iefix') format('embedded-opentype'), url(fonts2/custom-fa.woff2?86449202) format('woff2'), url(fonts2/custom-fa.woff?86449202) format('woff'), url(fonts2/custom-fa.ttf?86449202) format('truetype'), url('fonts2/custom-fa.svg?86449202#custom-fa') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.output { margin: 3em 0 0 0; }
+
+a.loimy {
+        /*line-height: normal;*/
+}
+
+#footer {
+        font-size: 100% !important;
+	text-align:center !important;
+	/*top:0; для вертикального формата + <br> в TOC
+	text-align:right !important;
+        vertical-align:  top !important;*/
+
+/* Кроссбраузерная прозрачность */
+filter: alpha(opacity=80); /* internet explorer */
+-khtml-opacity: 0.8; /* khtml, old safari */
+-moz-opacity: 0.8; /* mozilla, netscape */
+opacity: 0.8; /* fx, safari, opera */
+
+
+/* // Фиксированный нижний колонтитул CSS */
+ position: fixed;
+ right: 0px;
+ left: 0px;
+ bottom: 0px; 
+ height: 25px;
+ width: 90%;
+ /*width: 40px; для вертикального формата + <br> в TOC*/
+ background: #fff;
+
+margin:0px;
+padding:0px;
+}
+/* IE 6 */
+* html #footer {
+ position: absolute;
+ top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+/* Фиксированный нижний колонтитул CSS // */
+/*
+.fixed {
+
+	border-bottom: 0px solid #3F4041;
+	POSITION:fixed;
+	Z-INDEX:1000;
+	margin:0px;
+	margin-right:0px!important;
+	padding-right:0px!important;
+	bottom: 0;
+	left: 0;
+	//position: absolute;
+	top: expression(
+		document.getElementsByTagName( 'body' )[0].scrollTop + "px"
+		);
+	padding:0px;
+	Xheight: 20px;
+	width: 97%;
+	background-color:#ffffff;
+}
+*/
+#footer a {	font-family: Arial, Tahoma, Helvetica; color:#A81D33; text-decoration: none; border: 0px; }
+#footer a:hover { color:#ff0000; }
+
+
+
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+a:link {
+	color: #0000ff;
+	border-color: #b2ccf0;
+}
+a:visited {
+        color: #0000FF;
+}
+a:visited {
+	border-color: #CC3399;
+}
+
+a:visited.fresh, a:visited.footer {
+	border-color: #CC3399;
+}
+a:hover {
+	border-color: #f0b2b2; color: #ff0000;
+}
+a:active  { color:#8B0000; }
+
+
+
+
+.snoska {margin:0pt 0em 1em 1.43em; text-align:left; font-size: 90%; line-height: 130%; }
+
+
+body { background-color:#FEFEFE; font-size: 110%; color:#000111; margin: 1em 5% 6% 5%;font: normal 17px/26px "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;}
+
+.toc {TEXT-ALIGN:center; XFONT-SIZE:9pt;}
+
+
+
+
+
+
+
+
+
+p {
+ margin:0px 0px 10px 0px; text-indent:0em; line-height: 112%;} 
+
+
+
+
+
+
+
+sup{margin-left:-3px; font-weight:normal; }
+sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em;}
+
+
+
+h1,h2,h3,h4 { color:#00755B; text-align:center; font-family:"XStolzl", "Lazurski", "FuturaBook", "Cambria"; padding:0cm;}
+h1,h2 { font-weight:normal;}
+h1 { padding: 0.5em 1% 0.5em 1%; font-size: 190%; 
+
+    Xmargin-top: 25px;
+    Xfont-size: 50px;
+    line-height: 1.1;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #1e1e1e;
+    text-transform: uppercase;
+
+
+
+}
+.zag_sub { padding-top: 0em; padding-bottom:2em; font-size: 135% !important; text-align:center; }
+h2 { padding: 2em 5% 1.5em 5%; font-size: 170%; }
+h3 { padding-top: 2em; margin-bottom:1.5em; font-size: 130%; }
+h4 { padding-top: 1.50em; }
+
+.cb { text-align:center; font-weight:bold; margin:2em 0pt 1em 0em;}
+.cn { text-align:center; margin:0.5em 0pt 1em 0em; text-indent:0em; color:#A81D33;}
+.rg { text-align:right; margin:0.5em 0pt 1em 0em; text-indent:0em;}
+
+
+
