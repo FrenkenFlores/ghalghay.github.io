@@ -67,7 +67,7 @@ $(function(){
 //Комбинируемое бреве (бревис, кратка) 0306
 
 
-var prevValue,prevPattern; //Alex_Piggy add  Для ускорения (раза в два). Смысл в том, чтобы он выражение поиска считал один раз за изменение, а не для каждой строки отдельно
+//var prevValue,prevPattern; //Alex_Piggy add  Для ускорения (раза в два). Смысл в том, чтобы он выражение поиска считал один раз за изменение, а не для каждой строки отдельно
 
 
 //REGEX
@@ -126,7 +126,7 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
     if (target === "filterRow") { // && selectedFilterOperations == 'contains'
         return [function(dataItem) {
             var pattern = getter(value);
-            if (pattern == prevValue) {pattern = prevPattern;} else {prevValue = pattern; //Alex_Piggy add
+            //if (pattern == prevValue) {pattern = prevPattern;} else {prevValue = pattern; //Alex_Piggy add
             //pattern = pattern.replace(/(?<!\.)\*/g, '[\\u0400-\\u04FF\\w]*');
             pattern = pattern.replace(/\\b/g, '(?=\\s|[^\\u0400-\\u04FF\\w]|\\b|$)');
             pattern = pattern.replace(/@/g, '[\\u0400-\\u04FF\\w]');
@@ -138,7 +138,8 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
             pattern = pattern.replace(/>/g, '(гӀ|кх|къ|кӀ|пӀ|тӀ|хь|хӀ|цӀ|чӀ|б|в|г|д|ж|з|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ъ|ь|Ӏ)');
 
 
-            //pattern = pattern.replace(/5/g, '(гӀ|кх|къ|кӀ|пӀ|тӀ|хь|хӀ|цӀ|чӀ|б|в|г|д|ж|з|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ъ|ь|Ӏ)*((оа|аь|яь|а|е|ё|и|о|у|ы|э|ю|я)(гӀ|кх|къ|кӀ|пӀ|тӀ|хь|хӀ|цӀ|чӀ|б|в|г|д|ж|з|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ъ|ь|Ӏ)*){5}');
+            pattern = pattern.replace(/(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17)  /g, '(гӀ|кх|къ|кӀ|пӀ|тӀ|хь|хӀ|цӀ|чӀ|б|в|г|д|ж|з|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ъ|ь|Ӏ)*((оа|аь|яь|а|е|ё|и|о|у|ы|э|ю|я)(гӀ|кх|къ|кӀ|пӀ|тӀ|хь|хӀ|цӀ|чӀ|б|в|г|д|ж|з|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ъ|ь|Ӏ)*){$1}');
+
 
 
 
@@ -148,7 +149,7 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
             else
                  pattern = `(^|\\s|[^\\u0400-\\u04FF\\w]|\\b)${pattern}(?=\\s|[^\\u0400-\\u04FF\\w]|\\b|$)`;
             pattern = new RegExp(pattern, 'miu');
-            prevPattern = pattern;} //Alex_Piggy add
+            //prevPattern = pattern;} //Alex_Piggy add
             var cell = getter(dataItem[self.dataField]);
             if (cell.match(pattern)) {
                 return true;
