@@ -204,8 +204,10 @@ Semilight to an appropriate font-weight.
 
 #AboutCorpus_A {
     color: darkorange;
-    animation: blinkHelp 1.5s;}
+    /*animation: blinkHelp 1.5s;*/
+}
 
+/*
 @keyframes blinkHelp {
   0%   { opacity:0; font-size: 44px; }
   10%  { opacity:0.2; font-size: 44px; }
@@ -213,6 +215,7 @@ Semilight to an appropriate font-weight.
   60%  { opacity:0.8; font-size: 68px; }
   100% { opacity:1; font-size: 44px; }
 }
+*/
 
 #AboutCorpus {margin: 0px 255px 0px 0px !important;}
 
