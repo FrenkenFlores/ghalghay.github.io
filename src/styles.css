@@ -174,7 +174,8 @@ html {
 .its33:hover:before,
 .uzh27:hover:before,
 .selaa:hover:before,
-.xayor:hover:before {
+.xayor:hover:before,
+.kar95:hover:before {
     text-align:left !important;
     Xwidth: 200px;
     position: absolute;
@@ -200,7 +201,8 @@ html {
 .its33:hover:after,
 .uzh27:hover:after,
 .selaa:hover:after,
-.xayor:hover:after {
+.xayor:hover:after,
+.kar95:hover:after {
     content: '';
     position: absolute;
     margin: 0px 0px 0px 3px;
@@ -284,6 +286,11 @@ html {
     background: #00FF7F; color: #222222;}
 .xayor:hover:after {border-right: 15px solid #00FF7F;
 }
+.kar95:hover:before {
+    content: "Картоев М.У. Краткий словарь ингушской общественно-политической лексики. — Назрань, 1995";
+    background: #B2B2B2; color: #ffffff;}
+.kar95:hover:after {border-right: 15px solid #B2B2B2;
+}
 
 
 
@@ -311,6 +318,7 @@ its33 { box-shadow: 0px 0px 3px 13px #E2C36C; background-color:#E2C36C; color:#7
 uzh27 { box-shadow: 0px 0px 3px 13px #99AFCB; background-color:#99AFCB; color:#ffffff;}
 selaa { box-shadow: 0px 0px 3px 13px #D300C9; background-color:#D300C9; color:#ffffff;}
 xayor { box-shadow: 0px 0px 3px 13px #00FF7F; background-color:#00FF7F; color:#222222;}
+kar95 { box-shadow: 0px 0px 3px 13px #B2B2B2; background-color:#B2B2B2; color:#ffffff;}
 
 pti09 { background-color:#FDA230; color:#000000;}
 jiv09 { background-color:#FDA230; color:#000000;}
@@ -319,7 +327,7 @@ ast14 { background-color:#FDA230; color:#000000;}
 
 ant21, ant17, dud15, kod21, irt16, irsns, kodkt, 
 raz01, raz02, pti09, med19, kod18, its33, uzh27, 
-selaa, xayor
+selaa, xayor, kar95
 {
   text-decoration: none !important; width:100;/*%*/ Xheight:18px; float:left; 
   font-size:9px !important; text-align:left !important; white-space:nowrap; 
@@ -430,10 +438,22 @@ sub{bottom:-0.25em;}
 
 
 em {
+  Xdisplay: block;
   color:#009878;
   Xbackground-color:#F4CBCA;
-  font-style:normal;}
-
+  font-style:normal;
+}
+/*
+em u:before {
+	content: "\22C4\0020";
+	font-style:normal !important;
+	text-decoration: none !important;
+	border-bottom: 0px dashed #28B47E !important;
+	font-size: 18px !important;
+	Xposition: absolute;
+	left: 0em;
+	color:#009878;
+}*/
 
 /*https://qastack.ru/programming/7698764/custom-bullet-symbol-for-li-elements-in-ul-that-is-a-regular-character-and*/
 .dx-scrollable-container td li {

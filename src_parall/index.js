@@ -67,6 +67,7 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
 
 
 
+        data = data.replace(/(<sep>\|<\/sep>|<sep>\|\|<\/sep>)/g," ");
 
 
 

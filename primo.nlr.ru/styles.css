@@ -117,7 +117,7 @@ html {
 .dx-data-row .d strong > i {font-weight:500 !important; font-weight:bold !important;}
 .dx-data-row .d i > strong {font-weight:500 !important; font-weight:bold !important;}
 /*---strong*/
-.dx-data-row .e   {font-style:italic !important; color:#008A6A; Xwhite-space:nowrap !important;/*!!!*/}
+.dx-data-row .e   {Xfont-style:italic !important; color:#008A6A; Xwhite-space:nowrap !important;/*!!!*/}
 .e .dx-placeholder {color: #9EA5B4 !important;}
 .e .dx-datagrid.dx-filter-menu .dx-menu-item-has-icon .dx-icon { /*знач*/
     color: #9EA5B4 !important;}

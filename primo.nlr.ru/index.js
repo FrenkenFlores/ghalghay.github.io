@@ -246,6 +246,7 @@ $(function(){
         width: '9%',
         dataField: 'e',
         caption: 'Физ.хар-ки',
+        cssClass: "e",
 
         filterOperations: ['contains','='],
         calculateFilterExpression: function (value, selectedFilterOperations, target) {  
