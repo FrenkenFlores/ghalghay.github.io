@@ -681,7 +681,7 @@ $(function(){
         $('tr td:first-child uzh27').closest('td').css('background-color', '#99AFCB').addClass('uzh27');
         $('tr td:first-child selaa').closest('td').css('background-color', '#D300C9').addClass('selaa');
         $('tr td:first-child xayor').closest('td').css('background-color', '#00FF7F').addClass('xayor');
-        $('tr td:first-child kar95').closest('td').css('background-color', '#B2B2B2').addClass('kar95');
+        $('tr td:first-child kar95').closest('td').css('background-color', '#A9A9A9').addClass('kar95');
         // ...
 
 

@@ -288,8 +288,8 @@ html {
 }
 .kar95:hover:before {
     content: "Картоев М.У. Краткий словарь ингушской общественно-политической лексики. — Назрань, 1995";
-    background: #B2B2B2; color: #ffffff;}
-.kar95:hover:after {border-right: 15px solid #B2B2B2;
+    background: #A9A9A9; color: #ffffff;}
+.kar95:hover:after {border-right: 15px solid #A9A9A9;
 }
 
 
@@ -318,7 +318,7 @@ its33 { box-shadow: 0px 0px 3px 13px #E2C36C; background-color:#E2C36C; color:#7
 uzh27 { box-shadow: 0px 0px 3px 13px #99AFCB; background-color:#99AFCB; color:#ffffff;}
 selaa { box-shadow: 0px 0px 3px 13px #D300C9; background-color:#D300C9; color:#ffffff;}
 xayor { box-shadow: 0px 0px 3px 13px #00FF7F; background-color:#00FF7F; color:#222222;}
-kar95 { box-shadow: 0px 0px 3px 13px #B2B2B2; background-color:#B2B2B2; color:#ffffff;}
+kar95 { box-shadow: 0px 0px 3px 13px #A9A9A9; background-color:#A9A9A9; color:#ffffff;}
 
 pti09 { background-color:#FDA230; color:#000000;}
 jiv09 { background-color:#FDA230; color:#000000;}
