@@ -88,12 +88,14 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
         data = data.replace(/\u0439\u0443/g,"\u044E"); 	//йу——ю
 
 
+        data = data.replace(/надсмеивание/g,"высмеивание"); //надсмеивание=высмеивание
+        data = data.replace(/высмеивание/g,"надсмеивание"); //надсмеивание=высмеивание
 
 
 
 
 
-        data = data.replace(/(\u0301|\u0300|\u0308|\u0302|\u030C|\u0304|<y><\/y>-|\u007C\u007C|<[^>]*>|\u00B6)/g,""); //¶=u00B6||̈=\u0308||    диапазон символов: [\u0300-\u036f]  [̀ - \u0300]
+        data = data.replace(/(\u0301|\u0300|\u0308|\u0302|\u030C|\u0304|<\/y>~|\u007C\u007C|<[^>]*>|\u00B6)/g,""); //¶=u00B6||̈=\u0308||    диапазон символов: [\u0300-\u036f]  [̀ - \u0300]
 
 
         //data = data.replace(/(\u04C0|\u04CF)/g, "\u0031"); /*палочки на единицу*/
@@ -218,9 +220,9 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
 calculateFilterExpression: function (filterValue, selectedFilterOperation, target) {
     const columnField = this.dataField;
     var getter = function (data) {                                                 
-        return data[columnField].normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g, "").replace(/\u0451/g,"\u0435");  
+        return data[columnField].normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g, "").replace(/\u0451/g,"\u0435");  
     };
-    filterValue = filterValue.normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g, "").replace(/\u0451/g,"\u0435");
+    filterValue = filterValue.normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g, "").replace(/\u0451/g,"\u0435");
     return [getter, selectedFilterOperation || "contains", filterValue];
 }
 */
@@ -419,12 +421,12 @@ $(function(){
         //удаление акцентов, тегов - для отдельного использования
         calculateFilterExpression: function(value, selectedFilterOperation, target){
         var getter = function(data) {
-            var data  = data['b'].normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g,""); //||
+            var data  = data['b'].normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g,""); //||
             data = data.replace(/\u0451/g,"\u0435"); //ё—е
             //data = data.replace('\/\/', "\r\n"); //« // »    \u0020\u002F\u002F\u0020
             return data;
         };
-        value = value.normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g,"");
+        value = value.normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g,"");
         value = value.replace(/\u0451/g,"\u0435"); //ё—е
         return [getter, selectedFilterOperation || "contains", value];
         }
@@ -483,7 +485,7 @@ $(function(){
         //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
         calculateCellValue: function(rowData){
            if(rowData.c){         
-             var text = rowData.c.replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g, "");
+             var text = rowData.c.replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g, "");
              return text;         
            }
         }
@@ -539,7 +541,7 @@ $(function(){
         //удаление акцентов, тегов - на месте
         calculateFilterExpression: function(value, selectedFilterOperations, target){  
             var getter = function(data) {  
-              var data = data['d'].normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g,"444").replace(/\u0451/g,"\u0435"); //¶||
+              var data = data['d'].normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g,"444").replace(/\u0451/g,"\u0435"); //¶||
               //data = data.replace(/\u0451/g,"\u0435"); //ё—е
 
 
@@ -553,7 +555,7 @@ $(function(){
               return data;
             };  
  
-            value = value.normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>-|\u007C\u007C|<[^>]*>)/g,"444").replace(/\u0451/g,"\u0435"); //¶||
+            value = value.normalize('NFD').replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g,"444").replace(/\u0451/g,"\u0435"); //¶||
             value = value.replace(/\u0451/g,"\u0435"); //ё—е
  
             return [getter, selectedFilterOperations || "contains", value];  
@@ -682,6 +684,7 @@ $(function(){
         $('tr td:first-child selaa').closest('td').css('background-color', '#D300C9').addClass('selaa');
         $('tr td:first-child xayor').closest('td').css('background-color', '#00FF7F').addClass('xayor');
         $('tr td:first-child kar95').closest('td').css('background-color', '#A9A9A9').addClass('kar95');
+        $('tr td:first-child kur05').closest('td').css('background-color', '#114b3a').addClass('kur05');
         // ...
 
 

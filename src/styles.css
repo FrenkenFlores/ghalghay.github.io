@@ -175,7 +175,8 @@ html {
 .uzh27:hover:before,
 .selaa:hover:before,
 .xayor:hover:before,
-.kar95:hover:before {
+.kar95:hover:before,
+.kur05:hover:before {
     text-align:left !important;
     Xwidth: 200px;
     position: absolute;
@@ -202,7 +203,8 @@ html {
 .uzh27:hover:after,
 .selaa:hover:after,
 .xayor:hover:after,
-.kar95:hover:after {
+.kar95:hover:after,
+.kur05:hover:after {
     content: '';
     position: absolute;
     margin: 0px 0px 0px 3px;
@@ -291,6 +293,11 @@ html {
     background: #A9A9A9; color: #ffffff;}
 .kar95:hover:after {border-right: 15px solid #A9A9A9;
 }
+.kur05:hover:before {
+    content: "Куркиев А.С. Ингушско-русский словарь. — Магас, 2005";
+    background: #114b3a; color: #DAC8A2;}
+.kur05:hover:after {border-right: 15px solid #114b3a;
+}
 
 
 
@@ -319,6 +326,7 @@ uzh27 { box-shadow: 0px 0px 3px 13px #99AFCB; background-color:#99AFCB; color:#f
 selaa { box-shadow: 0px 0px 3px 13px #D300C9; background-color:#D300C9; color:#ffffff;}
 xayor { box-shadow: 0px 0px 3px 13px #00FF7F; background-color:#00FF7F; color:#222222;}
 kar95 { box-shadow: 0px 0px 3px 13px #A9A9A9; background-color:#A9A9A9; color:#ffffff;}
+kur05 { box-shadow: 0px 0px 3px 13px #114b3a; background-color:#114b3a; color:#DAC8A2;}
 
 pti09 { background-color:#FDA230; color:#000000;}
 jiv09 { background-color:#FDA230; color:#000000;}
@@ -327,7 +335,7 @@ ast14 { background-color:#FDA230; color:#000000;}
 
 ant21, ant17, dud15, kod21, irt16, irsns, kodkt, 
 raz01, raz02, pti09, med19, kod18, its33, uzh27, 
-selaa, xayor, kar95
+selaa, xayor, kar95, kur05
 {
   text-decoration: none !important; width:100;/*%*/ Xheight:18px; float:left; 
   font-size:9px !important; text-align:left !important; white-space:nowrap; 
@@ -558,9 +566,13 @@ r {
 
 
 /*Для выделения классов*/
-c {color:#708090;font-size:95%; white-space:nowrap !important;}
+c {color:#228B22;font-size:95%; white-space:nowrap !important;}
 /*Для выделения словоформ*/
-f {color:#7B7B7B;font-size:95%; white-space:nowrap !important;} /*6E7B81/7B7B7B/485868/637791*/
+f {color:#485868;Xfont-size:95%; Xwhite-space:nowrap !important;} /*6E7B81/7B7B7B/485868/637791*/
+/*Для выделения множественных форм*/
+mn {color:#008080;font-size:95%; white-space:nowrap !important;}
+/*Для выделения эргативных форм*/
+er {color:#6A5ACD;font-size:95%; white-space:nowrap !important;}
 
 /*Для словоформ, удаляемых после прорисовки*/
 y {
