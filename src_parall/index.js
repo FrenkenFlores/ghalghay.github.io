@@ -456,6 +456,18 @@ $(function(){
         //alignment: "right",  //!!
         caption: 'Источники',
         cssClass: "e", //Задает классCSS,прим-ый к яч-м: ".dx-data-row .cell-highlighted {"
+
+        //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
+        calculateCellValue: function(rowData){
+           if(rowData.e){
+             var text = rowData.e.replace(/#/g,"");
+             text = text.replace(/(СловоОПолкуИ)/g, "Слово о полку Игореве // Игора бӀунах дола дош \(Пер. С. И. Чахкиева\)");
+             text = text.replace(/(ПушПовБелк)/g, "Пушкин А. С. «Повести Белкина. Барышня-крестьянка» \(Пер. С.-Г. Котиева\)");
+             return text;
+           }
+        },
+
+
     }
 /* ,
     {

@@ -3,6 +3,10 @@
 /*    background: linear-gradient(145deg, #1f3c8e, #0000FF);*/
 
 
+/* смещен фильтр из первого столбца*/
+.a  .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content {
+    background: #273039 !important; Xdisplay: none !important; margin:0px 0px 0px -26px !important;
+}
 
 
 
@@ -379,10 +383,23 @@ c6 { background-color:#FF0000; padding:10px 0px 70px 0px; color:#FFFFFF;}
 
 
 /*Для источников*/
-k {font-size:8px !important;}
+k {font-size:9px !important;}
 
-
-
+ant17, ant21, dud15, kar95, kod18, kod21, 
+kodkt, kur05, med19, pti09, raz01, raz02, 
+selaa, uzh27, xayor { 
+	font-size:8px !important;
+}
+ant17:first-letter, ant21:first-letter, 
+dud15:first-letter, kar95:first-letter, 
+kod18:first-letter, kod21:first-letter, 
+kodkt:first-letter, kur05:first-letter, 
+med19:first-letter, pti09:first-letter, 
+raz01:first-letter, raz02:first-letter, 
+selaa:first-letter, uzh27:first-letter, 
+xayor:first-letter { 
+	font-size:9px !important;
+}
 
 
 
@@ -570,7 +587,7 @@ c {color:#228B22;font-size:95%; white-space:nowrap !important;}
 /*Для выделения словоформ*/
 f {color:#485868;Xfont-size:95%; Xwhite-space:nowrap !important;} /*6E7B81/7B7B7B/485868/637791*/
 /*Для выделения множественных форм*/
-mn {color:#008080;font-size:95%; white-space:nowrap !important;}
+m {color:#008080;font-size:95%; white-space:nowrap !important;}
 /*Для выделения эргативных форм*/
 er {color:#6A5ACD;font-size:95%; white-space:nowrap !important;}
 
@@ -665,8 +682,6 @@ p.epig { Xtext-align: justify; font-size: 90%; margin-left: 35%; margin-right: 0
 p.epig-p { text-align: right; font-size: 90%; font-style: italic; margin-right: 0.5em; margin-top: 0.5em; letter-spacing: 0.3em }
 
 P.pcenter {text-align:center; }
-
-
 
 
 
