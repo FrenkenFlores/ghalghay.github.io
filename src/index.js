@@ -475,6 +475,37 @@ $(function(){
         placeholder: "↓ Фильтр…",
         //allowFiltering: false,
         //headerFilter: false,
+
+
+        //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
+        calculateCellValue: function(rowData){
+           if(rowData.c){
+             var text = rowData.c.replace(/#/g,"");
+             text = text.replace(/(\|)/g, "<sep>|</sep>");
+             return text;
+           }
+        },
+        headerFilter: {
+          dataSource: function(options){
+                options.dataSource.pageSize = 2000; //https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize
+                options.dataSource.postProcess = function (results) {
+                    let x = results.reduce(function(map, entry) {
+                        //let newItems = entry.value.split('|');
+                        let newItems = entry.value ? entry.value.split('<sep>|</sep>') : [];
+                        return map.concat(newItems);
+                    }, [])
+                    .filter((e, i , arr) => arr.indexOf(e) === i && e.length)
+                    .sort(function(a, b) { //сортировка
+                        var a = a.toLowerCase(), b = b.toLowerCase();
+                        return a < b ? -1 : (a > b ? 1 : 0);
+                    })
+                    .map((e, i , arr) => ({text:e, value:['c', 'contains', e]}));
+                    return x;
+                };
+            }
+        },
+
+
         //allowSorting: false,
         encodeHtml: false,
         width: '6%',

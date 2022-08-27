@@ -372,13 +372,6 @@ ant21, ant17, dud15, kod21, irt16, irsns, kodkt, raz01, raz02, pti09, med19, kod
 }
 */
 
-selaa {box-shadow: -3px 0px 3px 13px #D300C9 !important; letter-spacing: -.08em !important;}
-c1 { background-color:#7A00E5; padding:10px 0px 70px 0px; color:#FFFFFF;}
-c2 { background-color:#0068FF; padding:10px 0px 70px 0px; color:#FFFFFF;}
-c3 { background-color:#00BC3F; padding:10px 0px 70px 0px; color:#FFFFFF;}
-c4 { background-color:#F4F400; padding:10px 0px 70px 0px; color:#FF0000;}
-c5 { background-color:#FF7F00; padding:10px 0px 70px 0px; color:#FFFFFF;}
-c6 { background-color:#FF0000; padding:10px 0px 70px 0px; color:#FFFFFF;}
 
 
 
@@ -401,6 +394,13 @@ xayor:first-letter {
 	font-size:9px !important;
 }
 
+selaa {box-shadow: -3px 0px 3px 13px #D300C9 !important; letter-spacing: -.08em !important;}
+c1 { background-color:#7A00E5; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c2 { background-color:#0068FF; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c3 { background-color:#00BC3F; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c4 { background-color:#F4F400; padding:10px 0px 70px 0px; color:#FF0000;}
+c5 { background-color:#FF7F00; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c6 { background-color:#FF0000; padding:10px 0px 70px 0px; color:#FFFFFF;}
 
 
 
