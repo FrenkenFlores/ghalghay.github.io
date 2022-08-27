@@ -4,7 +4,7 @@
 
 
 /* смещен фильтр из первого столбца*/
-.a  .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content {
+.a .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content {
     background: #273039 !important; Xdisplay: none !important; margin:0px 0px 0px -26px !important;
 }
 
@@ -185,9 +185,9 @@ html {
     Xwidth: 200px;
     position: absolute;
     padding: 4px 4px 4px 4px;
-    margin: -3px 0px 0px 17px;
+    margin: -3px 0px 0px 35px; /*было17 (см «.a .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content»)*/
     border-radius: 3px;
-    z-index:1001;
+    z-index:2001;
     font-size: 12px;
     pointer-events: none;
 }
@@ -212,10 +212,11 @@ html {
     content: '';
     position: absolute;
     margin: 0px 0px 0px 3px;
-	width: 0;
-	height: 0;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
+    z-index:2001;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 .ant17:hover:before {
     content: "Тариева Л.У. Русско-ингушский словарь антонимов. — Нальчик, 2017";

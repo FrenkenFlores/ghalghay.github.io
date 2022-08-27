@@ -404,7 +404,7 @@ $(function(){
         encodeHtml: false,
         width: '28',  //см "columnMinWidth"
         dataField: 'a',
-        alignment: "right",  //!!
+        //alignment: "right",  //!!
         caption: '▤ Источники',
         cssClass: "a", //Задает классCSS,прим-ый к яч-м: ".dx-data-row .cell-highlighted {"
 
@@ -696,9 +696,36 @@ $(function(){
              text = text.replace(/(Терм32-)/g, "Термины: 32\) Лингвистика");
              text = text.replace(/(Терм33-)/g, "Термины: 33\) Астрономия");
              text = text.replace(/(Терм34-)/g, "Термины: 34\) Абстрактные понятия");
+
+             text = text.replace(/(\|)/g, "<sep>|</sep>");
              return text;
            }
         },
+        headerFilter: {
+          dataSource: function(options){
+                options.dataSource.pageSize = 2000; //https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize
+                options.dataSource.postProcess = function (results) {
+                    let x = results.reduce(function(map, entry) {
+                        //let newItems = entry.value.split('|');
+                        let newItems = entry.value ? entry.value.split('<sep>|</sep>') : [];
+                        return map.concat(newItems);
+                    }, [])
+                    .filter((e, i , arr) => arr.indexOf(e) === i && e.length)
+                    .sort(function(a, b) { //сортировка
+                        var a = a.toLowerCase(), b = b.toLowerCase();
+                        return a < b ? -1 : (a > b ? 1 : 0);
+                    })
+                    .map((e, i , arr) => ({text:e, value:['e', 'contains', e]}));
+                    return x;
+                };
+            }
+        },
+
+
+
+
+
+
 
 
 
