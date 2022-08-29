@@ -675,6 +675,8 @@ num{margin-left:-3px; margin-right:4px; font-weight:normal; color:#008A6A;}
 /*num{font-size:10px !important;line-height:0;position:relative;vertical-align:baseline;}
 num{top:-0.5em;}*/
 
+sep2 {color:#008868; font-weight:normal !important;}
+sep3 {color:#000000; font-weight:normal !important; font-size:110%; margin-left:1px; margin-right:1px;}
 
 
 P.snoska {margin:0px 0px 0px 0px; text-align:left; font-size: 90%; line-height: 130%; text-indent:1em; }

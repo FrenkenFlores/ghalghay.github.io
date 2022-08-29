@@ -611,10 +611,22 @@ a:hover.a_color {
 	border-color: #ffffff !important; color:#ffffff !important;
 }
 a.color_kur {
-  border-bottom: 1px solid #DAC8A2 !important; color:#DAC8A2 !important;
+  border-bottom: 1px solid #AE9C76 !important; color:#DAC8A2 !important;
 }
 a:hover.color_kur {
-	border-color: #ffffff !important; color:#dddddd !important;
+	border-color: #aaaaaa !important; color:#dddddd !important;
+}
+a.color_kar {
+  border-bottom: 1px solid #dddddd !important; color:#ffffff !important;
+}
+a:hover.color_kar {
+	border-color: #fafafa !important; color:#ffffff !important;
+}
+a.color_mal {
+  border-bottom: 1px solid #C5854F !important; color:#763600 !important;
+}
+a:hover.color_mal {
+	border-color: #CC8C56 !important; color:#000000 !important;
 }
 
 </style>
@@ -721,16 +733,13 @@ l38 -5 -14 27 c-26 51 -90 64 -154 31 -88 -44 -99 -195 -20 -284 60 -69 28
 <p>В первом столбце таблицы, для идентификации источника, каждое слово сопровождается библиографической сигнатурой в виде краткого принятого здесь условного обозначения (кода), цвет фона которого маркируется цветом обложки книжного издания. Ниже приведён библиографический список сокращенных названий добавленных в базу словарей, где цифры в составе кода обозначают нумерацию или год издания, буквы&nbsp;— автора или название:</p>
 
 
-<TABLE width=100% cellspacing=0 cellpadding=0 class="tbl" style="font-size:15px !important; padding:3px; margin:2em 0 1.4em 0;"><th rowspan="3" bgcolor="#fff"></th>
+<TABLE width=100% cellspacing=0 cellpadding=0 class="tbl" style="font-size:15px !important; padding:3px; margin:2em 0 1.4em 0;"><th rowspan="2" bgcolor="#fff"></th>
 
 <TR style="text-align:center; font-size:11px !important; border: 1px solid #ffffff; height:28px; color:#FF0000;" bgcolor="#DDFB00"><TD width=40>КОД</TD>
 <TD width=60 style="border: 1px solid #ffffff;">ОБЛОЖКА</TD>
 <TD>БИБЛИОГРАФИЧЕСКАЯ ССЫЛКА</TD></TR>
 
 
-<TR style="background-color:#009878; color:#ffffff;"><TD width=40><P class=tab><irsns>ИРсНС</irsns></P></TD>
-<TD width=60 style="border: 1px solid #ffffff;" height="30" width="60">&nbsp;</TD>
-<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr>Ингушско-русский словарь неизвестного составителя, впервые опубликованный по&nbsp;<a href="https://web.archive.org/web/20010819194100/http://ingush.narod.ru/lang/i-r.htm" style="color:#fff;" target="_blank">ссылке</a>.</P></TD></TR>
 
 
 <TR style="background-color:#ffffff; color:#000000;"><th rowspan="5" bgcolor="#DDFB00"><span class="vertext">Вошли в <irt16>И<k>РТ</k>16</irt16></span></th><TD><P class=tab><pti09>ПТИ<k>09</k></pti09></P></TD>
@@ -756,9 +765,26 @@ l38 -5 -14 27 c-26 51 -90 64 -154 31 -88 -44 -99 -195 -20 -284 60 -69 28
 
 
 
+<TR style="background-color:#99AFCB; color:#ffffff;"><th rowspan="8" bgcolor="#fff"></th><TD><P class=tab><uzh27>УЖА<k>27</k></uzh27></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Ужахов&nbsp;М.&nbsp;Г.</b> Ингушско-русский словарь.&nbsp;— <i>г.&nbsp;Орджоникидзе, Гостипография&nbsp;И.А.О., 1927&nbsp;— 185&nbsp;с.</i></P></TD></TR>
+
+<TR style="background-color:#E2C36C; color:#763600;"><TD><P class=tab><its33>ИТС33</its33></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/IngTerm1933.html" target="_blank" class="color_mal"><b>Мальсагов&nbsp;З.&nbsp;К. (отв. редактор)</b> Ингушский терминологический сборник.&nbsp;— <i>г.&nbsp;Орджоникидзе, Типография&nbsp;«Сердало», 1933,&nbsp;май.&nbsp;— №1&nbsp;— 12&nbsp;с.</i></a></P></TD></TR>
 
 
-<TR style="background-color:#114b3a; color:#DAC8A2;"><th rowspan="4" bgcolor="#fff"></th><TD><P class=tab><kur05>КУР<k>05</k></kur05></P></TD>
+<TR style="background-color:#A9A9A9; color:#ffffff;"><TD><P class=tab><kar95>КАР<k>95</k></kar95></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/Kartoev1995.html" target="_blank" class="color_kar"><b>Картоев&nbsp;М.&nbsp;У.</b> Краткий словарь ингушской общественно-политической лексики.&nbsp;— <i>Назрань, 1995&nbsp;— 96&nbsp;с.</i></a></P></TD></TR>
+
+
+<TR style="background-color:#009878; color:#ffffff;"><TD width=40><P class=tab><irsns>ИРсНС</irsns></P></TD>
+<TD width=60 style="border: 1px solid #ffffff;" height="30" width="60">&nbsp;</TD>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr>Ингушско-русский словарь неизвестного составителя, впервые опубликованный по&nbsp;<a href="https://web.archive.org/web/20010819194100/http://ingush.narod.ru/lang/i-r.htm" style="color:#fff;" target="_blank">ссылке</a>.</P></TD></TR>
+
+
+<TR style="background-color:#114b3a; color:#DAC8A2;"><TD><P class=tab><kur05>КУР<k>05</k></kur05></P></TD>
 <TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/kur05.png" class="img"></TD>
 <TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/Kurkiev2005.html" target="_blank" class="color_kur"><b>Куркиев А. С.</b> Ингушско-русский словарь: 11142&nbsp;слова.&nbsp;— <i>Магас: Издательство&nbsp;«Сердало», 2005.&nbsp;— <nobr>544 с.</nobr></i></a></P><P class=tabv><font color=#FDA230>&nbsp;&nbsp;&nbsp;&nbsp;* В базе формы эргативного падежа выделены фигурными скобками</font></P></TD></TR>
 
@@ -785,7 +811,7 @@ l38 -5 -14 27 c-26 51 -90 64 -154 31 -88 -44 -99 -195 -20 -284 60 -69 28
 <TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/ant21.png" class="img"></TD>
 <TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Тариева Л.У.</b> ГӀалгӀай метта антонимай дошлорг. / Словарь антонимов ингушского языка.&nbsp;— <i>Магас,&nbsp;ООО «КЕП», 2021.&nbsp;— 168&nbsp;с.</i></P></TD></TR>
 
-<TR style="background-color:#144D25; color:#D7D7DB;"><th rowspan="9" bgcolor="#fff"></th><TD><P class=tab><kod18>КОД<k>18</k></kod18></P></TD>
+<TR style="background-color:#144D25; color:#D7D7DB;"><th rowspan="6" bgcolor="#fff"></th><TD><P class=tab><kod18>КОД<k>18</k></kod18></P></TD>
 <TD width=60 style="border: 1px solid #ffffff;"><img align="middle" src="src/img/kod18.png" class="img"></TD>
 <TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Коазой Iийса.</b>&nbsp;— ГIалгIай метта ширача дешай да́шхара дошлорьг (дицденна а, дицлуш ла́тта а, дицдалар кхиерам бола а овла́ тIара доагIа гIалгIай дешаш). / <b>Кодзоев Исса.</b> Толковый словарь архаизмов и малоупотребительных слов ингушского языка.&nbsp;— <i>Наьсаре:&nbsp;«КЕП», 2018.&nbsp;— 272&nbsp;с.</i></P></TD></TR>
 
@@ -807,17 +833,11 @@ l38 -5 -14 27 c-26 51 -90 64 -154 31 -88 -44 -99 -195 -20 -284 60 -69 28
 • <a href="https://yadi.sk/i/LGKdpGmBxT4mkQ" target="_blank" class="a_color"><b>Матенаькъан И.</b> Шу&nbsp;— денош, кIираш, бетташ //&nbsp;<i>Сердало.&nbsp;— 2018.12.15.&nbsp;— №188-189.&nbsp;— С.&nbsp;5</i></a><br>
 • <a href="https://disk.yandex.ru/i/x4DuYDXcVV__Hg" target="_blank" class="a_color">ГIалгIай ханорга 140 дизад //&nbsp;<i>Сердало.&nbsp;— 2021.02.06.&nbsp;— №17.&nbsp;— С.&nbsp;2</i></a></P></TD></TR>
 
-<TR style="background-color:#99AFCB; color:#ffffff;"><TD><P class=tab><uzh27>УЖА<k>27</k></uzh27></P></TD>
-<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
-<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><b>Ужахов&nbsp;М.&nbsp;Г.</b> Ингушско-русский словарь.&nbsp;— <i>г.&nbsp;Орджоникидзе, Гостипография&nbsp;И.А.О., 1927&nbsp;— 185&nbsp;с.</i></P></TD></TR>
 
-<TR style="background-color:#A9A9A9; color:#ffffff;"><TD><P class=tab><kar95>КАР<k>95</k></kar95></P></TD>
-<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
-<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/Kartoev1995.html" target="_blank"><b>Картоев&nbsp;М.&nbsp;У.</b> Краткий словарь ингушской общественно-политической лексики.&nbsp;— <i>Назрань, 1995&nbsp;— 96&nbsp;с.</i></a></P></TD></TR>
 
-<TR style="background-color:#E2C36C; color:#763600;"><TD><P class=tab><its33>ИТС33</its33></P></TD>
+<TR style="background-color:#D300C9; color:#ffffff;"><TD><P class=tab><selaa><c1>С</c1><c2>Е</c2><c3>Л</c3><c4>А</c4><c5>А</c5><c6>Д</c6></selaa></P></TD>
 <TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
-<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/IngTerm1933.html" target="_blank"><b>Мальсагов&nbsp;З.&nbsp;К. (отв. редактор)</b> Ингушский терминологический сборник.&nbsp;— <i>г.&nbsp;Орджоникидзе, Типография&nbsp;«Сердало», 1933,&nbsp;май.&nbsp;— №1&nbsp;— 12&nbsp;с.</i></a></P></TD></TR>
+<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/Sela1ad.html" target="_blank" class="a_color"><b>«СелаӀад» («Радуга»).</b> — Детский журнал. <i>(Словари из 280-и номеров, без дублей в базе)</i></a></P></TD></TR>
 
 
 <TR style="background-color:#E91344; color:#ffffff;"><TD><P class=tab><raz01>РАЗ<k>02</k></raz01></P></TD>
@@ -826,10 +846,6 @@ l38 -5 -14 27 c-26 51 -90 64 -154 31 -88 -44 -99 -195 -20 -284 60 -69 28
 <P class=tabv style="padding-top:0;"><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/IngTafsir.html" target="_blank" class="a_color">Ислам (Словарь к Тафсиру Корана на ингушском языке)</a></P>
 <P class=tabv style="padding-top:0;"><nobr>&nbsp;—&nbsp;</nobr><a href="https://www.youtube.com/channel/UCbNAKKJHIQ5ceuM8oHOPRAg" target="_blank" class="a_color">Словарь к проекту перевода фильма «Home» («Нана-лаьтта»)</a></P></TD></TR>
 
-
-<TR style="background-color:#D300C9; color:#ffffff;"><TD><P class=tab><selaa><c1>С</c1><c2>Е</c2><c3>Л</c3><c4>А</c4><c5>А</c5><c6>Д</c6></selaa></P></TD>
-<TD width=60 style="border: 1px solid #ffffff;" height="40" width="60">&nbsp;</TD>
-<TD><P class=tabv><nobr>&nbsp;—&nbsp;</nobr><a href="src/izd/Sela1ad.html" target="_blank" class="a_color"><b>«СелаӀад» («Радуга»).</b> — Детский журнал. <i>(Словари из 280-и номеров, без дублей в базе)</i></a></P></TD></TR>
 
 
 

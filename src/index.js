@@ -408,6 +408,7 @@ $(function(){
         caption: '▤ Источники',
         cssClass: "a", //Задает классCSS,прим-ый к яч-м: ".dx-data-row .cell-highlighted {"
 
+
         //удаление акцентов, тегов - для отдельного использования
         calculateFilterExpression: function(value, selectedFilterOperation, target){
         var getter = function(data) {
@@ -417,6 +418,9 @@ $(function(){
         value = value.normalize('NFD').replace(/<[^>]*>/g,"");
         return [getter, selectedFilterOperation || "contains", value];
         }
+
+
+
 /*
         //удаление акцентов, тегов - для отдельного использования
         calculateFilterExpression: function(value, selectedFilterOperation, target){
@@ -452,6 +456,17 @@ $(function(){
                 .appendTo(header);
         },
         cssClass: "b", //Задает классCSS,прим-ый к яч-м: ".dx-data-row .cell-highlighted {"
+
+
+
+        //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
+        calculateCellValue: function(rowData){
+           if(rowData.b){
+             var text = rowData.b.replace(/#/g,"");
+             text = text.replace(/(\|\|)/g, "<sep3>||</sep3>");
+             return text;
+           }
+        },
 
 /*
         //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
@@ -513,15 +528,8 @@ $(function(){
         //alignment: "right",  //!!
         caption: 'Сокр.',
         cssClass: "c", //Задает классCSS,прим-ый к яч-м: ".dx-data-row .cell-highlighted {"
-/*
-        //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
-        calculateCellValue: function(rowData){
-           if(rowData.c){         
-             var text = rowData.c.replace(/([\u0300-\u036f]|<y><\/y>~|\u007C\u007C|<[^>]*>)/g, "");
-             return text;         
-           }
-        }
-*/
+
+
 
 
         //удаление акцентов, тегов - для отдельного использования
@@ -558,15 +566,18 @@ $(function(){
         },
         cssClass: "d", //Задает классCSS,прим-ый к яч-м: ".dx-data-row .cell-highlighted {"
 
-/*
+
         //удаление/замены ИЗ ОТОБРЖАЕМЫХ РЕЗУЛЬТАТОВ
         calculateCellValue: function(rowData){
-           if(rowData.d){         
-             var text = rowData.d.replace(/(—)/g, "–");  //длинное тире — на среднее
-             return text;         
+           if(rowData.d){
+             var text = rowData.d.replace(/#/g,"");
+             //var text = rowData.d.replace(/(—)/g, "–");  //длинное тире — на среднее
+             text = text.replace(/(♦)/g, "<sep2>♦</sep2>");
+             //text = text.replace(/( \d+\)| \d+\.) /g, "<br><li>$1 ");
+             return text;
            }
         },
-*/
+
 
 
 /*
