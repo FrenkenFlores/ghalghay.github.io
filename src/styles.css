@@ -583,14 +583,14 @@ r {
 }
 
 
+/*Для выделения эргативных форм*/
+er {color:#9900CC;font-size:95%; white-space:nowrap !important;}
+/*Для выделения множественных форм*/
+m {color:#6666CC;font-size:95%; white-space:nowrap !important;}
 /*Для выделения классов*/
-c {color:#228B22;font-size:95%; white-space:nowrap !important;}
+c {color:#009933;font-size:95%; white-space:nowrap !important;} /*009900*/
 /*Для выделения словоформ*/
 f {color:#485868;Xfont-size:95%; Xwhite-space:nowrap !important;} /*6E7B81/7B7B7B/485868/637791*/
-/*Для выделения множественных форм*/
-m {color:#008080;font-size:95%; white-space:nowrap !important;}
-/*Для выделения эргативных форм*/
-er {color:#6A5ACD;font-size:95%; white-space:nowrap !important;}
 
 /*Для словоформ, удаляемых после прорисовки*/
 y {
