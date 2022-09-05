@@ -77,6 +77,8 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
         //В лат - лат буквы с комбинируемыми символами
         var data = data.normalize('NFD')
 
+
+
         data = data.replace(/\u0438\u0306/g, "\u0439"); //й(й)——й
 
 
@@ -463,6 +465,7 @@ $(function(){
         calculateCellValue: function(rowData){
            if(rowData.b){
              var text = rowData.b.replace(/#/g,"");
+             //////text = text.replace(/(<li><b>.*?<\/b>)\r\n<li><l>(<b>.*?<\/b>)<\/l>/g, "<li>$2$1");
              text = text.replace(/(\|\|)/g, "<sep3>||</sep3>");
              return text;
            }
