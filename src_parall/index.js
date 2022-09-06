@@ -462,7 +462,7 @@ $(function(){
            if(rowData.e){
              var text = rowData.e.replace(/#/g,"");
              text = text.replace(/(СловоОПолкуИ)/g, "Слово о полку Игореве // Игора бӀунах дола дош \(Пер. С. И. Чахкиева\)");
-             text = text.replace(/(ПушПовБелк)/g, "Пушкин А. С. «Повести Белкина. Барышня-крестьянка» \(Пер. С.-Г. Котиева\)");
+             text = text.replace(/(ПуБелкБршн)/g, "Пушкин А. С. «Повести Белкина. Барышня-крестьянка» \(Пер. С.-Г. Котиева\)");
              text = text.replace(/(СвифтЛилл)/g, "Свифт Д. «Гулливер у лилипутов» // «Гулливер лиллипуташкахь»");
              return text;
            }
@@ -509,9 +509,7 @@ $(function(){
 
 
 
-
-
-
+        $('tr td h4').closest('td').css('background-color', '#66ccff');
         //$('tr td:first-child ant21').closest('td').css('background-color', '#000000').addClass('ant21');
         // ...
 
