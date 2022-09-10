@@ -203,7 +203,7 @@ Semilight to an appropriate font-weight.
 
 
 #AboutCorpus_A {
-    color: darkorange;
+    color: #FF4338;
     /*animation: blinkHelp 1.5s;*/
 }
 
@@ -217,7 +217,7 @@ Semilight to an appropriate font-weight.
 }
 */
 
-#AboutCorpus {margin: 0px 255px 0px 0px !important;}
+#AboutCorpus {margin: 0px 253px 3px 0px !important;}
 
 #AboutCorpus svg       { color:#FF4338; fill: #FF4338;}
 #AboutCorpus svg:hover { color: #F41224; fill: #F41224;}

@@ -270,6 +270,9 @@ $(function(){
 
 
 
+        $('tr td ok').closest('td').css('background-color', '#3CB371');
+        //$('tr td:first-child ant21').closest('td').css('background-color', '#000000').addClass('ant21');
+        // ...
 
 
 
