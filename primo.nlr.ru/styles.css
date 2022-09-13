@@ -1,4 +1,8 @@
-﻿
+﻿.dx-datagrid-summary-item { /*!!!!!!!!!!!!!!!!!!!!*/
+	margin: -1px 0px 0px 100px !important;
+  background: transparent !important;
+}
+
 
 /*    background: linear-gradient(145deg, #1f3c8e, #0000FF);*/
 

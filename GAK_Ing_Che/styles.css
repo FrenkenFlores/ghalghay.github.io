@@ -1,0 +1,780 @@
+﻿.dx-datagrid-summary-item { /*!!!!!!!!!!!!!!!!!!!!*/
+	margin: -1px 0px 0px 100px !important;
+  background: transparent !important;
+}
+
+.author .img-container_item {
+    width:50px !important;
+}
+
+
+
+
+
+.dx-data-row .cell-highlighted {
+    color:#008A6A;
+}
+
+.dx-data-row .cell-info {
+    font-size:85%;
+}
+
+
+/*http://forum.ru-board.com/topic.cgi?forum=31&topic=20285&start=20#16*/
+/*СКРЫТИЕ ДВУХ ЯЧЕЕК*/
+/*---------------------------------------------------------*/
+.dx-datagrid-headers {
+  background: transparent;
+}
+.dx-datagrid-headers .dx-header-row td:not {
+  background: #1E1E20;
+}
+.dx-datagrid-headers .dx-datagrid-filter-row td:not {
+  background: white;
+}
+
+
+
+
+.dx-datagrid-filter-row .img-style{
+    background: #333; /* For browsers that don't support RGBA */
+    background: rgba(0,0,0,0.0);
+}
+
+
+
+.dx-header-row .img-style{
+font-size:115%;
+font-weight:bold;
+    color: white;
+    text-shadow: 0 1px black;
+    background: #333; /* For browsers that don't support RGBA */
+    background: rgba(0,0,0,0.15);
+    padding: 4px 8px;
+
+}
+
+
+
+div.img-container img {
+    filter: brightness(85%);
+}
+div.img-container img:hover {
+    filter: brightness(100%);
+}
+
+
+
+/** {
+  background-color:#ffffff; *//*F5F5EA*//*
+}*/
+.img-container_item {
+  background-color:#F2DEB9;
+  width: 100%;
+}
+/*.img-container {
+ margin: -10px -6px -10px -6px!important; 
+}*/
+
+
+
+
+
+
+
+
+/*    background: linear-gradient(145deg, #1f3c8e, #0000FF);*/
+
+
+/* смещен фильтр из первого столбца*/
+.a .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content {
+    background: #273039 !important; Xdisplay: none !important; margin:0px 0px 0px -26px !important;
+}
+
+
+
+
+
+/* ПОДСВЕТКА ВВОДА В INPUT ===================================================================
+<input onkeyup='fix(this)' type='text' minlength='1' required title='' id='id_input' class='class_input' Xplaceholder='Поиск'>*/
+.b input, .d input {
+       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24px' Xwidth='130px' style='padding-left: 27px !important; font-family: Segoe UI,SFUIDisplay,-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;'><text x='0' y='17' fill='deeppink' font-size='15'>Фильтр…</text></svg>") !important;
+       background-repeat: no-repeat !important;
+}
+.a input, .c input, .e input {
+       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24px' Xwidth='130px' style='padding-left: 27px !important; font-family: Segoe UI,SFUIDisplay,-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;'><text x='0' y='17' fill='gray' font-size='15'>Фильтр…</text></svg>") !important;
+       background-repeat: no-repeat !important;
+}
+.a input:focus,
+.b input:focus,
+.c input:focus,
+.d input:focus,
+.e input:focus,
+.a input:valid,
+.b input:valid,
+.c input:valid,
+.d input:valid,
+.e input:valid {background-image:none !important; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24px' Xwidth='130px'><text x='0' y='17' fill='white' font-size='15'> </text></svg>") !important;
+}
+input:valid  {
+  background-color: #FFE5EC !important;
+  border: 2px solid #F44A57;  /*focus поиска!!!!!!!!!!!!!!!!!!!!!!!*/
+  height: 24px;
+}
+/*
+.dx-show-clear-button .dx-icon-clear {
+  display: inline;
+  z-index: 100;
+}
+*/
+
+
+
+/*https://itchief.ru/html-and-css/media-queries*/
+
+/*
+@media (max-width: 55700px) {
+.dx-data-row .a   {width: 50px !important;}
+.dx-data-row .b   {width: 600px !important;}
+.dx-data-row .c   {display:none !important;}
+.dx-data-row .d   {width: 600px !important;}
+.dx-data-row .e   {display:none !important;}
+.dx-button-mode-contained {background-color: #EA93A0;}
+}
+*/
+
+
+.dx-nodata {color:#444444;}
+.dx-nodata .nd-code {color:#F44A57; font-size:15px;}
+.dx-nodata r {color: #F44A57 !important; font-size:15px;}
+.dx-nodata r2 {font-style:italic;}
+.dx-nodata code {
+	white-space:nowrap !important;
+	padding: 0px .2em;
+	background-color: #EAFFED; color: #008000;
+	border-radius: 3px;
+	font-size:15px;
+	font-smooth: auto;
+	word-wrap: break-word;
+}
+
+
+/*#### For the "inset" look only */
+html {
+    overflow: auto;
+    max-width: 100%; 	/*Add*/
+    overflow-x: hidden; /*Add*/
+}
+/*#### Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+/*#### Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/*#### Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(244,74,87,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(244,74,87,0.4);
+}
+/*#### Выделение верхней/левой половины трека */
+/*::-webkit-scrollbar-track-piece:start {
+	background: rgba(150,150,150,0.4); 
+}*/
+/*#### Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    width:20px; Xborder-radius:20px !important; 
+    background-color:rgba(144,144,144,0.7);
+}
+
+
+/*peretekanie cveta*/
+/*
+.dx-data-row .b,.dx-data-row .c,.dx-data-row .d,.dx-data-row .e   {
+    background: #FFF9DC;
+    background: -moz-linear-gradient(-45deg, #FFFFDF 0%, #FFE9CF 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#FFFFDF), color-stop(100%,#FFE9CF));
+    background: -o-linear-gradient(-45deg, #FFFFDF 0%, #FFE9CF 100%);
+    background: linear-gradient(-45deg, #FFFFDF 0%, #FFE9CF 100%);
+    border: solid 1px #DEC9AF;
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+*/
+
+
+
+
+
+
+.dx-header-row > td {white-space:nowrap !important;} /*запрет перевода строки в верхнем фрейме*/
+
+
+
+/*колоноки*/
+.dx-data-row .a   {}
+.a .dx-placeholder {color: #9EA5B4 !important;}
+.a .dx-datagrid.dx-filter-menu .dx-menu-item-has-icon .dx-icon { /*знач*/
+    color: #9EA5B4 !important;}
+.dx-data-row .b   {}
+.dx-data-row .c   {font-style:italic; white-space:nowrap !important;/*!!!*/}
+.c .dx-placeholder {color: #9EA5B4 !important;}
+.c .dx-datagrid.dx-filter-menu .dx-menu-item-has-icon .dx-icon { /*знач*/
+    color: #9EA5B4 !important;}
+.dx-data-row .d b {Xfont-weight:500; font-weight:normal !important;}
+/*strong---*/
+.dx-data-row .d strong {font-weight:500 !important; Xfont-weight:bold !important;}
+.dx-data-row .d strong > i {font-weight:500 !important; font-weight:bold !important;}
+.dx-data-row .d i > strong {font-weight:500 !important; font-weight:bold !important;}
+/*---strong*/
+.dx-data-row .e   {font-style:italic !important; color:#008A6A; white-space:nowrap !important;/*!!!*/}
+.e .dx-placeholder {color: #9EA5B4 !important;}
+.e .dx-datagrid.dx-filter-menu .dx-menu-item-has-icon .dx-icon { /*знач*/
+    color: #9EA5B4 !important;}
+
+
+
+
+
+
+.ant17:hover:before,
+.ant21:hover:before,
+.dud15:hover:before,
+.kod21:hover:before,
+.irt16:hover:before,
+.irsns:hover:before,
+.kodkt:hover:before,
+.raz01:hover:before,
+.raz02:hover:before,
+.pti09:hover:before,
+.med19:hover:before,
+.kod18:hover:before,
+.its33:hover:before,
+.uzh27:hover:before,
+.selaa:hover:before,
+.xayor:hover:before,
+.kar95:hover:before,
+.kur05:hover:before {
+    text-align:left !important;
+    Xwidth: 200px;
+    position: absolute;
+    padding: 4px 4px 4px 4px;
+    margin: -3px 0px 0px 35px; /*было17 (см «.a .dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content»)*/
+    border-radius: 3px;
+    z-index:2001;
+    font-size: 12px;
+    pointer-events: none;
+}
+.ant17:hover:after,
+.ant21:hover:after,
+.dud15:hover:after,
+.kod21:hover:after,
+.irt16:hover:after,
+.irsns:hover:after,
+.kodkt:hover:after,
+.raz01:hover:after,
+.raz02:hover:after,
+.pti09:hover:after,
+.med19:hover:after,
+.kod18:hover:after,
+.its33:hover:after,
+.uzh27:hover:after,
+.selaa:hover:after,
+.xayor:hover:after,
+.kar95:hover:after,
+.kur05:hover:after {
+    content: '';
+    position: absolute;
+    margin: 0px 0px 0px 3px;
+    z-index:2001;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+.ant17:hover:before {
+    content: "Тариева Л.У. Русско-ингушский словарь антонимов. — Нальчик, 2017";
+    background: #ac5e42; color: #ffffff;}
+.ant17:hover:after {border-right: 15px solid #ac5e42;
+}
+.ant21:hover:before {
+    content: "Тариева Л.У. Словарь антонимов ингушского языка. — Магас, 2021";
+    background: #000000; color: #ffffff;}
+.ant21:hover:after {border-right: 15px solid #000000;
+}
+.dud15:hover:before {
+    content: "Дударов А.-М. М. Земледелие ингушей (XIX — первая половина XX века)... — Нальчик, 2015";
+    background: #c2af9a; color: #8e3635;}
+.dud15:hover:after {border-right: 15px solid #c2af9a;
+}
+.kod21:hover:before {
+    content: "Кодзоев Н.Д. Русско-ингушский словарь. — Ростов н/Д, 2021";
+    background: #1f3c8e; color: #B7AD98;}
+.kod21:hover:after {border-right: 15px solid #1f3c8e;
+}
+.irt16:hover:before {
+    content: "Барахоева Н.М., Кодзоев Н.Д., Хайров Б.А. Ингушско-русский ... словарь терминов. — Нальчик, 2016";
+    background: #96391d; color: #D0B64E;}
+.irt16:hover:after {border-right: 15px solid #96391d;
+}
+.irsns:hover:before {
+    content: "Ингушско-русский словарь неизвестного составителя";
+    background: #009878; color: #ffffff;}
+.irsns:hover:after {border-right: 15px solid #009878;
+}
+.kodkt:hover:before {
+    content: "Кодзоев Н.Д. Словарь компьютерных терминов. — Назрань, 2016";
+    background: #55a72a; color: #e3f4e5;}
+.kodkt:hover:after {border-right: 15px solid #55a72a;
+}
+.raz01:hover:before {
+    content: "Названия месяцев по разным источникам и авторам";
+    background: #E91344; color: #ffffff;}
+.raz01:hover:after {border-right: 15px solid #E91344;
+}
+.raz02:hover:before {
+    content: "Разные источники";
+    background: #E91344; color: #ffffff;}
+.raz02:hover:after {border-right: 15px solid #E91344;
+}
+.med19:hover:before {
+    content: "Кодзоев Н.Д. Медицина. Русско-ингушский словарь. — Назрань, 2019";
+    background: #FDA230; color: #000000;}
+.med19:hover:after {border-right: 15px solid #FDA230;
+}
+.kod18:hover:before {
+    content: "Кодзоев Исса. Толковый словарь архаизмов и малоупотребительных слов ингушского языка. — Назрань, 2018";
+    background: #144D25; color: #D7D7DB;}
+.kod18:hover:after {border-right: 15px solid #144D25;
+}
+.its33:hover:before {
+    content: "Ингушский терминологический сборник. 1933, май, №1";
+    background: #E2C36C; color: #763600;}
+.its33:hover:after {border-right: 15px solid #E2C36C;
+}
+.uzh27:hover:before {
+    content: "Ужахов М.Г. Ингушско-русский словарь. — Орджоникидзе, 1927";
+    background: #99AFCB; color: #ffffff;}
+.uzh27:hover:after {border-right: 15px solid #99AFCB;
+}
+.selaa:hover:before {
+    content: "«СелаӀад» («Радуга»). — Детский журнал";
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);  /*background: #D300C9;*/ color: #ffffff;}
+.selaa:hover:after {border-right: 15px solid #ff0000;
+}
+.xayor:hover:before {
+    content: "Хайров Б. Наименование древнего и средневекового оружия на ингушском языке. — Магас, 2012";
+    background: #00FF7F; color: #222222;}
+.xayor:hover:after {border-right: 15px solid #00FF7F;
+}
+.kar95:hover:before {
+    content: "Картоев М.У. Краткий словарь ингушской общественно-политической лексики. — Назрань, 1995";
+    background: #A9A9A9; color: #ffffff;}
+.kar95:hover:after {border-right: 15px solid #A9A9A9;
+}
+.kur05:hover:before {
+    content: "Куркиев А.С. Ингушско-русский словарь. — Магас, 2005";
+    background: #114b3a; color: #DAC8A2;}
+.kur05:hover:after {border-right: 15px solid #114b3a;
+}
+
+
+
+
+
+
+
+
+
+/*коды авторов*/
+ant17 { box-shadow: 0px 0px 3px 13px #471D1C; background-color:#ac5e42; color:#ffffff;
+                                              padding: 1px 0px 4px 2px;}
+ant21 { box-shadow: 0px 0px 3px 13px #000000; background-color:#ffffff; color:#000000;
+                                              padding: 1px 0px 4px 2px;}
+dud15 { box-shadow: 0px 0px 3px 13px #c2af9a; background-color:#c2af9a; color:#8e3635;}
+kod21 { box-shadow: 0px 0px 3px 13px #1f3c8e; background-color:#1f3c8e; color:#B7AD98;}
+irt16 { box-shadow: 0px 0px 3px 13px #96391d; background-color:#96391d; color:#D0B64E;}
+irsns { box-shadow: 0px 0px 3px 13px #009878; background-color:#009878; color:#ffffff;}
+kodkt { box-shadow: 0px 0px 3px 13px #55a72a; background-color:#55a72a; color:#e3f4e5;}
+raz01 { box-shadow: 0px 0px 3px 13px #E91344; background-color:#E91344; color:#ffffff;}
+raz02 { box-shadow: 0px 0px 3px 13px #E91344; background-color:#E91344; color:#ffffff;}
+med19 { box-shadow: 0px 0px 3px 13px #FDA230; background-color:#FDA230; color:#000000;}
+kod18 { box-shadow: 0px 0px 3px 13px #144D25; background-color:#144D25; color:#D7D7DB;}
+its33 { box-shadow: 0px 0px 3px 13px #E2C36C; background-color:#E2C36C; color:#763600;}
+uzh27 { box-shadow: 0px 0px 3px 13px #99AFCB; background-color:#99AFCB; color:#ffffff;}
+selaa { box-shadow: 0px 0px 3px 13px #D300C9; background-color:#D300C9; color:#ffffff;}
+xayor { box-shadow: 0px 0px 3px 13px #00FF7F; background-color:#00FF7F; color:#222222;}
+kar95 { box-shadow: 0px 0px 3px 13px #A9A9A9; background-color:#A9A9A9; color:#ffffff;}
+kur05 { box-shadow: 0px 0px 3px 13px #114b3a; background-color:#114b3a; color:#DAC8A2;}
+
+pti09 { background-color:#FDA230; color:#000000;}
+jiv09 { background-color:#FDA230; color:#000000;}
+ras09 { background-color:#FDA230; color:#000000;}
+ast14 { background-color:#FDA230; color:#000000;}
+
+ant21, ant17, dud15, kod21, irt16, irsns, kodkt, 
+raz01, raz02, pti09, med19, kod18, its33, uzh27, 
+selaa, xayor, kar95, kur05
+{
+  text-decoration: none !important; width:100;/*%*/ Xheight:18px; float:left; 
+  font-size:9px !important; text-align:left !important; white-space:nowrap; 
+  overflow: visible; Xfont-variant:small-caps; letter-spacing: -.04em;
+  Xmargin:0px auto; margin:0px 0px 0px -5px !important;/*!!!*/
+
+
+/*поворот надписи*/ /*
+    display: inline-block;
+    text-align: right !important;
+    -webkit-transform: rotate(-90deg);*/
+    /* transform: rotate(-90deg); */
+}
+
+
+
+/*
+@media (max-width: 768px) {
+ant21, ant17, dud15, kod21, irt16, irsns, kodkt, raz01, raz02, pti09, med19, kod18, its33  {
+	bottom: 0; display: inline-block; width:30px;
+	padding: 0; Xmargin: 35px 2px 0px 0px;
+	text-align: center; Xposition:absolute; vertical-align:middle;
+
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	white-space: nowrap;
+}
+}
+*/
+
+
+
+
+/*Для источников*/
+k {font-size:9px !important;}
+
+ant17, ant21, dud15, kar95, kod18, kod21, 
+kodkt, kur05, med19, pti09, raz01, raz02, 
+selaa, uzh27, xayor { 
+	font-size:8px !important;
+}
+ant17:first-letter, ant21:first-letter, 
+dud15:first-letter, kar95:first-letter, 
+kod18:first-letter, kod21:first-letter, 
+kodkt:first-letter, kur05:first-letter, 
+med19:first-letter, pti09:first-letter, 
+raz01:first-letter, raz02:first-letter, 
+selaa:first-letter, uzh27:first-letter, 
+xayor:first-letter { 
+	font-size:9px !important;
+}
+
+selaa {box-shadow: -3px 0px 3px 13px #D300C9 !important; letter-spacing: -.08em !important;}
+c1 { background-color:#7A00E5; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c2 { background-color:#0068FF; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c3 { background-color:#00BC3F; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c4 { background-color:#F4F400; padding:10px 0px 70px 0px; color:#FF0000;}
+c5 { background-color:#FF7F00; padding:10px 0px 70px 0px; color:#FFFFFF;}
+c6 { background-color:#FF0000; padding:10px 0px 70px 0px; color:#FFFFFF;}
+
+
+
+
+
+.dx-scrollable-container { line-height:110% !important;} /*межстрочный интервал*/
+
+
+
+
+
+/*.dx-data-row .znachenie {
+    font-style: italic;
+}*/
+
+
+
+/** {
+  background-color:#ffffff; *//*F5F5EA*//*
+}*/
+.img-container_item {
+  background-color:#F2DEB9;
+  width: 100%;
+}
+/*.img-container {
+ margin: -10px -6px -10px -6px!important; 
+}*/
+body {
+  margin-top:4.50em;
+}
+
+td b
+    {Xtext-decoration : line-through;
+        Xtext-decoration: overline;
+    float: bottom !important;
+    border: 0px solid !important;
+    outline: 0 !important;
+    font-size: 16px;
+    line-height:-10px !important;
+    /*text-shadow: 0px -1px 0px #333333;*/
+    }
+
+.zzz {
+  margin-left:2.50em;
+}
+
+dd {
+  margin:0px 0px 0px 1.50em;
+  padding:0px 0px 0px 1.50em;
+}
+
+
+
+i sup {margin-left:0px; color:#3D3D3D;}
+
+sup{margin-left:-3px; font-weight:normal; color:#E6002D;}
+sup{font-size:12px !important;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+
+
+em {
+  Xdisplay: block;
+  color:#009878;
+  Xbackground-color:#F4CBCA;
+  font-style:normal;
+}
+/*
+em u:before {
+	content: "\22C4\0020";
+	font-style:normal !important;
+	text-decoration: none !important;
+	border-bottom: 0px dashed #28B47E !important;
+	font-size: 18px !important;
+	Xposition: absolute;
+	left: 0em;
+	color:#009878;
+}*/
+
+/*https://qastack.ru/programming/7698764/custom-bullet-symbol-for-li-elements-in-ul-that-is-a-regular-character-and*/
+.dx-scrollable-container td li {
+	position: relative;
+	list-style: none;
+	margin-left: -0.2em;
+	padding-left: 0.6em; 
+  /*background: url('li.gif') no-repeat 0 0.6em;*/
+}
+.dx-scrollable-container td li:before {
+	content: "\2013";
+	position: absolute;
+	left: 0em;
+	color:#888888;
+}
+
+
+
+
+
+
+
+/*антонимы LI*/
+.dx-scrollable-container td li.ant {
+	position: relative;
+	list-style: none;
+	margin-left: -0.2em;
+	padding-left: 0.6em; 
+  /*background: url('li.gif') no-repeat 0 0.6em;*/
+}
+.dx-scrollable-container td li.ant:before {
+	content: "◑";
+	position: absolute;
+	left: -2px;
+	font-size: 11px !important;
+	color:#9EA5B4;
+}
+
+
+
+strong {font-family:"Segoe UI Semibold";Xfont-weight:500 !important;}
+
+
+hr {COLOR:#00755B; margin:0.60em 0em 0.30em 0em; text-align:left; width:18%;}
+
+
+
+
+::selection { background: #273039; color:#ffffff; }
+::-moz-selection { background: #273039; color:#ffffff; }
+::-webkit-selection { background: #273039; color:#ffffff; }
+
+
+
+
+/*<s><span>...</span></s>*/
+s { 
+    Xvertical-align: middle; color:#FF0000 !important;  /* цвет зачеркивающей линии */ 
+} 
+s span {
+    color:#222222 !important;  /* цвет зачеркиваемого текста */ 
+} 
+
+/*<s>strike<span class="s1 s2"></span></s>*/
+/*s { position: relative; text-decoration:none; }
+span.s2 { top: -5.5ex; left: 0; width:7ex; border-bottom: 0.1ex solid red; // top: -1.2ex;font-size:16pt }
+span.s1 { position:absolute; text-indent: -1000em; }*/
+
+
+
+
+
+
+/*дерево*/
+ul.domTree li:before {content: "";}
+#domTree { margin: 15px 0px 15px 0px; line-height: 120%; }
+ul.domTree, ul.domTree ul { padding: 0 0 0 1em; margin: 0; }
+ul.domTree li { padding: 0; margin: 0; list-style: none; position: relative; }
+ul.domTree li li { list-style: none; }
+ul.domTree li:first-child::before { position: absolute; top: 0; height: 0.6em; left: -0.75em; width: 0.5em; border-style: none none solid solid; content: ""; border-width: 0.1em; color:#C0C0C0; }
+ul.domTree li:not(:last-child)::after { position: absolute; top: 0; bottom: -0.6em; left: -0.75em; width: 0.5em; border-style: none none solid solid; content: ""; border-width: 0.1em; color:#C0C0C0; }
+ul.domTree li code, .code { Xfont-family: "Segoe UI","Helvetica Neue",helvetica,verdana,sans-serif; font-size: 90%; color:#3D3D3D;}
+ul.domTree .dt1,ul.domTree .dt3,ul.domTree .dt5,ul.domTree .dt7,ul.domTree .dt9,
+ul.domTree .dt2,ul.domTree .dt4,ul.domTree .dt6,ul.domTree .dt8 { color:#C0C0C0; }
+
+
+/*Для списка языков в заголовках таблицы*/
+v {font-size:9px !important; margin-left:-3px; bottom:-0.25em; 
+   top:-0.5em; color:#CCCCCC; margin-bottom:8px;}
+v {line-height:0; position:relative; vertical-align:baseline;}
+v {bottom:-0.25em;}
+v {top:-0.5em;}
+ing:before {content: url("icons/ing+rus.png");}
+rus:before {content: url("icons/rus.png");}
+
+
+
+/*Для выделения красным*/
+r {
+  color: #F44A57 !important; font-weight:bold;
+}
+
+
+/*Для выделения эргативных форм*/
+er {color:#9900CC;font-size:95%; white-space:nowrap !important;}
+/*Для выделения множественных форм*/
+m {color:#6666CC;font-size:95%; white-space:nowrap !important;}
+/*Для выделения классов*/
+c {color:#009933;font-size:95%; white-space:nowrap !important;} /*009900*/
+/*Для выделения словоформ*/
+f {color:#485868;Xfont-size:95%; Xwhite-space:nowrap !important;} /*6E7B81/7B7B7B/485868/637791*/
+
+/*Для словоформ, удаляемых после прорисовки*/
+y {
+  display:none !important;
+}
+/*Для латиницы, продублированной на кириллице*/
+l {
+  color:#708090; Xline-height: 130% !important;}
+l b {Xfont-family:"Segoe UI Semibold"; font-weight:normal /*500*/ !important;}
+
+
+/*Для ссылочных НЕвидимых. Вписывать в конце: \r\n<lnk>слово1\r\n<lnk>слово2*/
+lnk {display:none !important;}
+
+/*Для ссылочных Видимых. Вписывать в конце: \r\n<see>слово</see>   */
+see {color:#708090; display: block; margin: 8px 0px 0px 0px;}
+see:before {
+	color:#F44A57;
+	content: "\2194  "; /*\2194 // \2195 // \21F5*/
+}
+
+/*Для доп. поясн <add>[слово]</add>   */
+add {color:#F44A57;}
+
+/*Выделение переводов примеров употребления*/
+u {
+  color:#009878;
+  text-decoration: none;
+  border-bottom: 1px dashed #28B47E;
+}
+
+/*
+q {
+  color: #ff0000 !important;
+}
+
+z {
+  font-size: 12px !important;
+  color:#CC0000; *//*FF5565   29675F*//*
+  margin:0px 0px 0px 3px;
+}*/
+
+/*green 1A7F37*/
+
+
+span.empty { margin-left: 1em; }
+
+/*дробь сложная*/
+table.drob {
+  Xmax-width: 57px;
+  Xwidth: 57px;
+  border-collapse: collapse;
+  text-align: left;
+  text-indent: 0em;
+}
+table.drob td {
+  color:#009878;
+  padding: 0px 4px;
+  transition: .3s linear;
+}
+table.drob td.drob1 {border-bottom: 1px solid #009878; border-left: 1px solid #009878;}
+table.drob td.drob2 {border-bottom: 1px solid #009878;}
+table.drob td.drob3 {border-left: 1px solid #009878;}
+table.drob td.drob4 {border-right: 1px solid #009878; font-size:90%;}
+table.drob td.drob-no {color:#000050;}
+
+
+
+
+
+/*l  {   Xdisplay: flex;clear: both;
+  flex-direction: row-reverse;  Xposition: absolute; }*/
+
+
+
+
+
+
+/*параллельн переводы*/
+sep {color:#32CD32; margin-left:2px; margin-right:2px;}
+num{margin-left:-3px; margin-right:4px; font-weight:normal; color:#008A6A;}
+/*num{font-size:10px !important;line-height:0;position:relative;vertical-align:baseline;}
+num{top:-0.5em;}*/
+
+sep2 {color:#008868; font-weight:normal !important;}
+sep3 {color:#000000; font-weight:normal !important; font-size:110%; margin-left:1px; margin-right:1px;}
+
+
+
+XXXhr {position:absolute; bottom:0; width:90%; height:70px; background:#66ccff;}
+P.snoska { margin:0px 0px 0px 0px; text-align:left; font-size: 90%; line-height: 130%; text-indent:1em; }
+
+p.epig { Xtext-align: justify; font-size: 90%; margin-left: 35%; margin-right: 0.8em; margin-top: 2em; }
+p.epig-p { text-align: right; font-size: 90%; font-style: italic; margin-right: 0.5em; margin-top: 0.5em; letter-spacing: 0.2em }
+
+P.pcenter {text-align:center; margin: 0em; }
+P.pright {text-align:right; margin: 0em; }
+
+h4 {text-align:center; margin: 5px; width:99%; background:#66ccff;}
+
+
+
+
+

@@ -1,5 +1,86 @@
 ﻿
 
+.author .img-container_item {
+    width:50px !important;
+}
+
+
+
+
+
+.dx-data-row .cell-highlighted {
+    color:#008A6A;
+}
+
+.dx-data-row .cell-info {
+    font-size:85%;
+}
+
+
+/*http://forum.ru-board.com/topic.cgi?forum=31&topic=20285&start=20#16*/
+/*СКРЫТИЕ ДВУХ ЯЧЕЕК*/
+/*---------------------------------------------------------*/
+/*
+.dx-datagrid-headers {
+  background: transparent;
+}
+.dx-datagrid-headers .dx-header-row td:not(:first-child) {
+  background: #1E1E20;
+}
+.dx-datagrid-headers .dx-datagrid-filter-row td:not(:first-child) {
+  background: white;
+}
+*/
+
+
+
+.dx-datagrid-filter-row .img-style{
+    background: #333; /* For browsers that don't support RGBA */
+    background: rgba(0,0,0,0.0);
+}
+
+
+
+.dx-header-row .img-style{
+font-size:115%;
+font-weight:bold;
+    color: white;
+    text-shadow: 0 1px black;
+    background: #333; /* For browsers that don't support RGBA */
+    background: rgba(0,0,0,0.15);
+    padding: 4px 8px;
+
+}
+
+
+
+div.img-container img {
+    filter: brightness(85%);
+}
+div.img-container img:hover {
+    filter: brightness(100%);
+}
+
+
+
+/** {
+  background-color:#ffffff; *//*F5F5EA*//*
+}*/
+.img-container_item {
+  background-color:#F2DEB9;
+  width: 100%;
+}
+/*.img-container {
+ margin: -10px -6px -10px -6px!important; 
+}*/
+
+
+
+
+
+
+
+
 /*    background: linear-gradient(145deg, #1f3c8e, #0000FF);*/
 
 

@@ -12341,6 +12341,7 @@ display:none; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! скрытие зн�
 	TOP:expression(document.getElementsByTagName( 'body' )[0].scrollTop + 'px');  /*???*/
 	width: 60px;
 	background-color:#273039;
+	background: transparent !important;
 	font-weight: normal;
 	color: #FFFF00 !important;
 
