@@ -79,10 +79,13 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
 
 
 
+        data = data.replace(/\u0418\u0306/g, "\u0419"); //Й(Й)——Й
         data = data.replace(/\u0438\u0306/g, "\u0439"); //й(й)——й
 
-
+        data = data.replace(/\u0415\u0308/g,"\u0401"); 	//Ё(Е+̈)——Ё
         data = data.replace(/\u0435\u0308/g,"\u0451"); 	//ё(е+̈)——ё
+
+        data = data.replace(/\u0401/g,"\u0415"); 	//Ё	——Е
         data = data.replace(/\u0451/g,"\u0435"); 	//ё	——е
 
 
