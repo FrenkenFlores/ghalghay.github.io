@@ -98,6 +98,7 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
 
 
 
+        data = data.replace(/(<code>)/g," "); //чтобы слова не слипались после удаления всех тегов
 
 
         data = data.replace(/(\u0301|\u0300|\u0308|\u0302|\u030C|\u0304|<\/y>~|\u007C\u007C|<[^>]*>|\u00B6)/g,""); //¶=u00B6||̈=\u0308||    диапазон символов: [\u0300-\u036f]  [̀ - \u0300]
