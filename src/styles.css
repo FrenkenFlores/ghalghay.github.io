@@ -261,7 +261,8 @@ html {
 .selaa:hover:before,
 .xayor:hover:before,
 .kar95:hover:before,
-.kur05:hover:before {
+.kur05:hover:before,
+.nic04:hover:before {
     text-align:left !important;
     Xwidth: 200px;
     position: absolute;
@@ -289,7 +290,8 @@ html {
 .selaa:hover:after,
 .xayor:hover:after,
 .kar95:hover:after,
-.kur05:hover:after {
+.kur05:hover:after,
+.nic04:hover:after {
     content: '';
     position: absolute;
     margin: 0px 0px 0px 3px;
@@ -384,6 +386,11 @@ html {
     background: #114b3a; color: #DAC8A2;}
 .kur05:hover:after {border-right: 15px solid #114b3a;
 }
+.nic04:hover:before {
+    content: "Johanna Nichols. Ingush-English and English-Ingush dictionary. — London, 2004";
+    background: #202a6d; color: #b9b394;}
+.nic04:hover:after {border-right: 15px solid #202a6d;
+}
 
 
 
@@ -413,6 +420,7 @@ selaa { box-shadow: 0px 0px 3px 13px #D300C9; background-color:#D300C9; color:#f
 xayor { box-shadow: 0px 0px 3px 13px #00FF7F; background-color:#00FF7F; color:#222222;}
 kar95 { box-shadow: 0px 0px 3px 13px #A9A9A9; background-color:#A9A9A9; color:#ffffff;}
 kur05 { box-shadow: 0px 0px 3px 13px #114b3a; background-color:#114b3a; color:#DAC8A2;}
+nic04 { box-shadow: 0px 0px 3px 13px #202a6d; background-color:#202a6d; color:#b9b394;}
 
 pti09 { background-color:#FDA230; color:#000000;}
 jiv09 { background-color:#FDA230; color:#000000;}
@@ -421,7 +429,7 @@ ast14 { background-color:#FDA230; color:#000000;}
 
 ant21, ant17, dud15, kod21, irt16, irsns, kodkt, 
 raz01, raz02, pti09, med19, kod18, its33, uzh27, 
-selaa, xayor, kar95, kur05
+selaa, xayor, kar95, kur05, nic04
 {
   text-decoration: none !important; width:100;/*%*/ Xheight:18px; float:left; 
   font-size:9px !important; text-align:left !important; white-space:nowrap; 
@@ -462,7 +470,7 @@ k {font-size:9px !important;}
 
 ant17, ant21, dud15, kar95, kod18, kod21, 
 kodkt, kur05, med19, pti09, raz01, raz02, 
-selaa, uzh27, xayor { 
+selaa, uzh27, xayor, nic04 { 
 	font-size:8px !important;
 }
 ant17:first-letter, ant21:first-letter, 
@@ -472,7 +480,7 @@ kodkt:first-letter, kur05:first-letter,
 med19:first-letter, pti09:first-letter, 
 raz01:first-letter, raz02:first-letter, 
 selaa:first-letter, uzh27:first-letter, 
-xayor:first-letter { 
+xayor:first-letter, nic04:first-letter { 
 	font-size:9px !important;
 }
 
@@ -681,6 +689,20 @@ y {
 l {
   color:#708090; Xline-height: 130% !important;}
 l b {Xfont-family:"Segoe UI Semibold"; font-weight:normal /*500*/ !important;}
+
+/*Для транслитерации*/
+trl {color:#485868; margin: 0px 2px 0px 0px; }
+em trl {color:#009878; margin: 0px 2px 0px 0px;}
+trl b {color:#3E3E4B; font-family:"Segoe UI Semibold"; font-weight:500 !important;}
+em trl:before {content: "|"; margin: 0px 5px 0px 1px; color:#32CD32;}
+Xem trl:after {content: "]"; margin: 0px 2px 0px 2px;}
+
+/*Для блоков с частями речи и тп*/
+bl {color:#586E98 !important;}
+t1 {color:#211AC6; font-style:italic; white-space:nowrap !important;}
+t2 {color:#586E98; font-style:italic; white-space:nowrap !important;}
+t3 {color:#32CD32; font-style:normal; white-space:nowrap !important; font-size: 90%;}
+/*6D160A*/
 
 
 /*Для ссылочных НЕвидимых. Вписывать в конце: \r\n<lnk>слово1\r\n<lnk>слово2*/

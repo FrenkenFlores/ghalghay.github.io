@@ -90,12 +90,18 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
 
 
 
+        ////data = data.replace(/\u00E4/g,"\u0061\u0308"); 	//ä——ä(a+̈)
+
+
         data = data.replace(/\u0439\u0443/g,"\u044E"); 	//йу——ю
 
 
         data = data.replace(/надсмеивание/g,"высмеивание"); //надсмеивание=высмеивание
         data = data.replace(/высмеивание/g,"надсмеивание"); //надсмеивание=высмеивание
 
+
+        data = data.replace(/([бвд])\.([аеиоӀу])/g,"$1$2"); //Николс — обработка точки после кирилл. класса
+        data = data.replace(/([djbv])\.([aeiouwy])/g,"$1$2"); //Николс — обработка точки после лат. класса
 
 
         data = data.replace(/(<code>)/g," "); //чтобы слова не слипались после удаления всех тегов
@@ -810,6 +816,7 @@ $(function(){
         $('tr td:first-child xayor').closest('td').css('background-color', '#00FF7F').addClass('xayor');
         $('tr td:first-child kar95').closest('td').css('background-color', '#A9A9A9').addClass('kar95');
         $('tr td:first-child kur05').closest('td').css('background-color', '#114b3a').addClass('kur05');
+        $('tr td:first-child nic04').closest('td').css('background-color', '#202a6d').addClass('nic04');
         // ...
 
 
