@@ -79,6 +79,8 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
 
 
 
+
+
         data = data.replace(/\u0418\u0306/g, "\u0419"); //Й(Й)——Й
         data = data.replace(/\u0438\u0306/g, "\u0439"); //й(й)——й
 
@@ -100,8 +102,9 @@ function gCalculateFilterExpression (value, selectedFilterOperations, target, se
         data = data.replace(/высмеивание/g,"надсмеивание"); //надсмеивание=высмеивание
 
 
+
         data = data.replace(/([бвд])\.([аеиоӀу])/g,"$1$2"); //Николс — обработка точки после кирилл. класса
-        data = data.replace(/([djbv])\.([aeiouwy])/g,"$1$2"); //Николс — обработка точки после лат. класса
+        data = data.replace(/([djbv])\.([äaeiouwy])/g,"$1$2"); //Николс — обработка точки после лат. класса
 
 
         data = data.replace(/(<code>)/g," "); //чтобы слова не слипались после удаления всех тегов
@@ -477,6 +480,8 @@ $(function(){
              var text = rowData.b.replace(/#/g,"");
              //////text = text.replace(/(<li><b>.*?<\/b>)\r\n<li><l>(<b>.*?<\/b>)<\/l>/g, "<li>$2$1");
              text = text.replace(/(\|\|)/g, "<sep3>||</sep3>");
+             //text = text.replace(/([бвд])\.([аеиоӀу])/g,"<cc>$1</cc>$2"); //Николс — обработка точки после кирилл. класса
+             //text = text.replace(/([djbv])\.([äaeiouwy])/g,"<cc>$1</cc>$2"); //Николс — обработка точки после лат. класса
              return text;
            }
         },
@@ -587,6 +592,8 @@ $(function(){
              //var text = rowData.d.replace(/(—)/g, "–");  //длинное тире — на среднее
              text = text.replace(/(♦)/g, "<sep2>♦</sep2>");
              //text = text.replace(/( \d+\)| \d+\.) /g, "<br><li>$1 ");
+             //text = text.replace(/([бвд])\.([аеиоӀу])/g,"<cc>$1</cc>$2"); //Николс — обработка точки после кирилл. класса
+             //text = text.replace(/([djbv])\.([äaeiouwy])/g,"<cc>$1</cc>$2"); //Николс — обработка точки после лат. класса
              return text;
            }
         },

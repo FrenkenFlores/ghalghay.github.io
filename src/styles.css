@@ -699,9 +699,9 @@ Xem trl:after {content: "]"; margin: 0px 2px 0px 2px;}
 
 /*Для блоков с частями речи и тп*/
 bl {color:#586E98 !important;}
-t1 {color:#211AC6; font-style:italic; white-space:nowrap !important;}
+t1 {color:#CD5C5C; font-style:italic; white-space:nowrap !important;}
 t2 {color:#586E98; font-style:italic; white-space:nowrap !important;}
-t3 {color:#32CD32; font-style:normal; white-space:nowrap !important; font-size: 90%;}
+t3 {color:#808080; font-style:normal; white-space:nowrap !important; font-size: 90%; letter-spacing: 1px;}
 /*6D160A*/
 
 
@@ -709,7 +709,7 @@ t3 {color:#32CD32; font-style:normal; white-space:nowrap !important; font-size: 
 lnk {display:none !important;}
 
 /*Для ссылочных Видимых. Вписывать в конце: \r\n<see>слово</see>   */
-see {color:#708090; display: block; margin: 8px 0px 0px 0px;}
+see {color:#708090; display: block; margin: 6px 0px 0px 0px;}
 see:before {
 	color:#F44A57;
 	content: "\2194  "; /*\2194 // \2195 // \21F5*/
@@ -795,6 +795,6 @@ P.pright {text-align:right; margin: 0em; }
 h4 {text-align:center; margin: 5px; width:99%; background:#66ccff;}
 
 
-
+cc {color:#FF4500 !important;}
 
 
